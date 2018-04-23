@@ -77,6 +77,7 @@ class LoginGUI extends Frame {
 		txtF1.addActionListener(handler);
 		passF.addActionListener(handler);
 		buttonExit.addActionListener(handler);
+		buttonLogin.addActionListener(handler);
 	}
 
 	// EventHandling class
@@ -87,37 +88,28 @@ class LoginGUI extends Frame {
 				dispose();
 				System.exit(0);
 			}
-			// Event in textField
-			else if(e.getSource() == txtF1) {
-				if(e.getActionCommand().equals(uid))
-				{
-					flagUid = 1;
+
+			// Event on login button
+			if(e.getSource() == buttonLogin){
+				if(txtF1.getText().equals(uid) && passF.getText().equals(pass)){
+					JOptionPane.showMessageDialog(null,"Successfull Login");
+					try{
+						Thread.sleep(1000);
+					}
+					catch(InterruptedException ex){
+						System.out.println("Exception "+ex+" Caught");
+					}
+					dispose();	
+				}
+				else{
+					JOptionPane.showMessageDialog(null,"Invalid Login Credentials");
 				}
 			}
-			// Event in PassField (textFiled for password)
-			else if(e.getSource() == passF) {
-				if(e.getActionCommand().equals(pass))
-				{
-					flagPass = 1;
-				}
-			}
-			
-			if( flagUid == 1 && flagPass == 1 ){
-				System.out.println("Matching");
-				JOptionPane.showMessageDialog(null,"Successfull Login");
-				try{
-					Thread.sleep(1000);
-				}
-				catch(InterruptedException ex){
-					System.out.println("Exception "+ex+" Caught");
-				}
-				dispose();
-			}
-			else{
-				 JOptionPane.showMessageDialog(null,"Invalid Login Credentials");
-			}
+		
 		}
 	}
+
+	// main starts here
 	public static void main(String[] args) {
 		LoginGUI frameObj = new LoginGUI();
 		frameObj.setSize(600,600);
