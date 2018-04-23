@@ -47,7 +47,6 @@ class LoginGUI extends Frame {
 		label1.setText("Username");
 		add(label1); // add the label to the Frame
 
-			
 		// set initial width of the the TextFields
 		txtF1.setColumns(20);
 		passF.setColumns(20);
