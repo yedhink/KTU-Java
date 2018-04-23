@@ -6,37 +6,61 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-class AppletFrameActions extends Frame {
+
+class LoginGUI extends Frame {
+	// declare variables
 	private Label label1,label2; 
 	private TextField txtF1;
 	private TextField passF;
+	
 	// Looking for a better way to store this.
 	private final String uid = "Yedhin";
 	private final String pass = "*123#";
-
+	
+	// variables to know whether user inputted username and password is correct or not
 	private int flagUid = 0, flagPass = 0;
-	public AppletFrameActions(){
-		super("EventHandling using Frame class of applet");
-		setLayout(new FlowLayout());
-		label1 = new Label();
-		label1.setAlignment(Label.CENTER);
-		label1.setText("Username");
-		add(label1);
+	
+	// Constructor for the class
+	public LoginGUI(){
+		// set title
+		super("EventHandling basics");
+
 		txtF1 = new TextField();
 		passF = new TextField();
+		label1 = new Label();
+		label2 = new Label();
+
+		// explictely setting layout. default is Flow itself
+		setLayout(new FlowLayout());
+		
+		// create a label for username
+		label1.setAlignment(Label.CENTER);
+		label1.setText("Username");
+		add(label1); // add the label to the Frame
+
+		// set initial width of the the TextFields
 		txtF1.setColumns(20);
 		passF.setColumns(20);
+
+		// changing echoing of characters typed in password field into *
 		passF.setEchoChar('*');
+		
 		add(txtF1);
-		label2 = new Label();
+
+		// create a label for password
 		label2.setAlignment(Label.CENTER);
 		label2.setText("Password");
 		add(label2);
+
 		add(passF);
+		
+		// creating an listener object.
 		theHandler handler = new theHandler();
 		txtF1.addActionListener(handler);
 		passF.addActionListener(handler);
 	}
+
+	// EventHandling class
 	private class theHandler implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			// Event in textField
