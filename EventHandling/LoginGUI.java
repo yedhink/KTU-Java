@@ -15,14 +15,11 @@ class LoginGUI extends Frame {
 	private TextField txtF1;
 	private TextField passF;
 	private Button buttonExit,buttonLogin;
-	private Panel panelExit,panelLogin;
+	private Panel panelLogin;
 
 	// Looking for a better way to store this.
 	private final String uid = "Yedhin";
 	private final String pass = "*123#";
-	
-	// variables to know whether user inputted username and password is correct or not
-	private int flagUid = 0, flagPass = 0;
 	
 	// Constructor for the class
 	public LoginGUI(){
@@ -32,7 +29,6 @@ class LoginGUI extends Frame {
 		passF = new TextField();
 		label1 = new Label();
 		label2 = new Label();
-		panelExit = new Panel();
 		panelLogin = new Panel();
 		buttonExit = new Button("close");
 		buttonLogin = new Button("login");
@@ -67,15 +63,13 @@ class LoginGUI extends Frame {
 		add(buttonExit);
 
 		// login button
-		//panelLogin.setLayout(null);
-		panelLogin.setBounds(100,100,100,50);
 		panelLogin.add(buttonLogin);
 		add(panelLogin);
 
-		// creating an listener object.
+		// create an listener object.
 		theHandler handler = new theHandler();
-		txtF1.addActionListener(handler);
-		passF.addActionListener(handler);
+		
+		// add action listeners for both the buttons 
 		buttonExit.addActionListener(handler);
 		buttonLogin.addActionListener(handler);
 	}
@@ -100,12 +94,12 @@ class LoginGUI extends Frame {
 						System.out.println("Exception "+ex+" Caught");
 					}
 					dispose();	
+					System.exit(0);
 				}
 				else{
 					JOptionPane.showMessageDialog(null,"Invalid Login Credentials");
 				}
 			}
-		
 		}
 	}
 
