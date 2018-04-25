@@ -36,10 +36,12 @@ public class NumericIntegration {
 		private static float a,b,n;
 		private static String formule , eachFOfX, choice;
 		private static List<String> valueOfX = new ArrayList<String>();
-		private static double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000;
+		private static List<String> listFOfX; 
+		private static double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000, evaluated= 0.0000;
 		private static float h;
 		private static int i = 0;
 		private static boolean debug = false;
+
 	public static void trapezoidalIntegration() throws IOException {
 		// create character stream object to read from console
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -71,6 +73,7 @@ public class NumericIntegration {
 		for (i=0;i<=(int)(n);i++) {
 			valueOfX.add(String.format("%s",a+(i*h)));
 		}
+
 		// convert list to array of String[]
 		String[] list = new String[valueOfX.size()];
 		valueOfX.toArray(list);
@@ -78,6 +81,7 @@ public class NumericIntegration {
 		// store f(x)
 		eachFOfX = formule;
 		if(debug){
+			listFOfX = new ArrayList<String>();
 			System.out.printf("a : %f\nb : %f\nn : %f\nh : %f\nx : ",a,b,n,h);
 		}
 
@@ -88,20 +92,28 @@ public class NumericIntegration {
 			// replace exponential e with its value
 			eachFOfX = eachFOfX.replace("e",String.valueOf("2.71828"));
 			
+			eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
+			evaluated = (double)RecursiveParser.eval(eachFOfX);
+			if(debug) listFOfX.add(String.valueOf(evaluated));
+			
 			// create ( f(x1)+f(x2)+f(x3)+...f(x[n-1]) )
 			if (!eachXValue.equals(String.valueOf(a)) && !eachXValue.equals(String.valueOf(b)) ){ 
-				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
-				secondExp = secondExp + (double)RecursiveParser.eval(eachFOfX);
+				secondExp = secondExp + evaluated;
 			}
 			// create ( f(x0) + f(xn) )
 			else{
-				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
-				firstPlusLast = firstPlusLast + (double)RecursiveParser.eval(eachFOfX);
+				firstPlusLast = firstPlusLast + evaluated;
 			}
 			// restore value of f(x) to orginal formula after replacing
 			eachFOfX = formule;
 		}
 		if(debug){
+			list = new String[listFOfX.size()];
+			listFOfX.toArray(list);
+			System.out.print("\nf(x) : ");
+			for ( String fx : listFOfX){
+				System.out.printf("%s  ", fx);
+			}
 			System.out.printf("\nh/2 : %f\nf(x0) + f(xn) : %f\nf(x1)+f(x2)+f(x3)+...f(x[n-1] : %f\n",(h/2),firstPlusLast,secondExp);
 		}
 		double finalTrapezoidalIntergralValue = h/2*(firstPlusLast + (2 * secondExp));
