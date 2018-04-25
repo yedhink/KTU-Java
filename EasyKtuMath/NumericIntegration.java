@@ -147,25 +147,26 @@ public class NumericIntegration {
 			eachFOfX = eachFOfX.replace("e",String.valueOf("2.71828"));
 			
 			eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
-			if( i++ == 0 || i++ ==  (n+1) ){
+			if( i == 0 || i ==  (n) ){
 				firstPlusLast = firstPlusLast + (double)RecursiveParser.eval(eachFOfX);
 			}
-			else if( (i++) % 2 != 0 ){
+			else if( (i) % 2 != 0 ){
 				secondExp = secondExp + (double)RecursiveParser.eval(eachFOfX);
 			}
-			else{
+			else if( (i) % 2 == 0 ){
 				thirdExp = thirdExp + (double)RecursiveParser.eval(eachFOfX);
 			}
-			
+			++i;
 			System.out.println("firstExp: "+firstPlusLast);
 			System.out.println("secondExp: "+secondExp);
 			System.out.println("thirdExp: "+thirdExp);
+			
 			// restore value of f(x) to orginal formula after replacing
 			eachFOfX = formule;
 		}
 		secondExp = 4 * secondExp;
 		thirdExp = 2 * thirdExp;
-		System.out.println("First: "+firstPlusLast+" second: "+secondExp);
+		System.out.println("First: "+firstPlusLast+" second: "+secondExp+" third: "+thirdExp);
 		double finalSimpsonsIntergralValue = h/3*(firstPlusLast + secondExp + thirdExp);
 		System.out.println("Final answer: "+finalSimpsonsIntergralValue);
 	}
