@@ -101,11 +101,10 @@ public class NumericIntegration {
 			// restore value of f(x) to orginal formula after replacing
 			eachFOfX = formule;
 		}
-		secondExp = 2 * secondExp;
 		if(debug){
-			System.out.printf("\nh/2 : %f\nf(x0) + f(xn) : %f\nf(x1)+f(x2)+f(x3)+...f(x[n-1]) : %f\n",(h/2),firstPlusLast,secondExp);
+			System.out.printf("\nh/2 : %f\nf(x0) + f(xn) : %f\nf(x1)+f(x2)+f(x3)+...f(x[n-1] : %f\n",(h/2),firstPlusLast,secondExp);
 		}
-		double finalTrapezoidalIntergralValue = h/2*(firstPlusLast + secondExp);
+		double finalTrapezoidalIntergralValue = h/2*(firstPlusLast + (2 * secondExp));
 		System.out.println("Final answer: "+finalTrapezoidalIntergralValue);
 	}
 	public static void simpsonsIntegration() throws IOException {
@@ -166,9 +165,7 @@ public class NumericIntegration {
 			// restore value of f(x) to orginal formula after replacing
 			eachFOfX = formule;
 		}
-		secondExp = 4 * secondExp;
-		thirdExp = 2 * thirdExp;
-		System.out.println("First: "+firstPlusLast+" second: "+secondExp+" third: "+thirdExp);
+		System.out.println("First: "+firstPlusLast+" second: "+(4 * secondExp)+" third: "+(2 * thirdExp));
 		double finalSimpsonsIntergralValue = h/3*(firstPlusLast + secondExp + thirdExp);
 		System.out.println("Final answer: "+finalSimpsonsIntergralValue);
 	}
