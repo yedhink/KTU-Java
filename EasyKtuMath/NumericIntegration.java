@@ -30,6 +30,20 @@ import java.util.*;
  *	    f(x): ?   ?    ?    ?    ?   ?   ?    ?    ?    ?   ?
  *	    if x is given like above in question then choose first value as a and lastvalue as b
  *	    i.e :- a=x0 and b=xn
+ *	    then either h or n will be given in question.
+ *	    h = (b-a)/n , where n = count(x)
+ *
+ *  SIMPSONS METHOD:-
+ *	    a
+ *	    (f(x)dx = h/3 [ (f(x)+f(xn)) + 4 * (f(x1)+f(x3)+f(x5)+...f(x[n-1])) + 2 * (f(x2)+f(x4)+f(x6)+...f(x[n-2])) ] 
+ *	    )
+ *	    b
+ *	    exmaple:-
+ *	      x : 0  0.2  0.4  0.6  0.8  1  1.2  1.4  1.6  1.8  2
+ *	    f(x): ?   ?    ?    ?    ?   ?   ?    ?    ?    ?   ?
+ *	    if x is given like above in question then choose first value as a and lastvalue as b
+ *	    i.e :- a=x0 and b=xn
+ *	    then either h or n will be given in question.
  *	    h = (b-a)/n , where n = count(x)
  */
 public class NumericIntegration {
@@ -37,7 +51,7 @@ public class NumericIntegration {
 		private static String formule , eachFOfX, choice;
 		private static List<String> valueOfX;
 		private static List<String> listFOfX; 
-		private static double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000, evaluated= 0.0000;
+		private static double secondExp , firstPlusLast , thirdExp , evaluated;
 		private static float h;
 		private static int i = 0;
 		private static boolean debug;
