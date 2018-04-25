@@ -1,5 +1,5 @@
 package MATH.modulesix;
-import MATH.modulesix.*;
+import MATH.modulesix.RecursiveParser;
 import java.lang.*;
 import java.io.*;
 import java.util.*;
@@ -16,10 +16,10 @@ import javax.script.ScriptException;
  * i.e :- a=x0 and b=xn
  * h = (b-a)/n , where n = count(x)
  */
-class NumericIntegration {
-        public static void main(String args[]) throws ScriptException,IOException {
+public class NumericIntegration {
+	public static void trapezoidalIntegration() throws IOException {
 		float a,b,n;
-		String formule , eachFOfX;
+		String formule , eachFOfX, choice;
 		List<String> valueOfX = new ArrayList<String>();
 		double secondExp = 0.0000 , firstPlusLast= 0.0000;
 		float h;
@@ -30,9 +30,18 @@ class NumericIntegration {
 		a = Float.parseFloat(br.readLine());
 		System.out.print("Enter b = ");
 		b = Float.parseFloat(br.readLine());
-		System.out.print("Enter n = ");
-		n = Float.parseFloat(br.readLine());
-		h = (b-a)/n;
+		System.out.print("Is the value of n given?(y/n) = ");
+		choice = br.readLine();
+		if(choice.equals("y") || choice.equals("Y")){ 
+			System.out.print("Enter n = ");
+			n = Float.parseFloat(br.readLine());
+			h = (b-a)/n;
+		}
+		else{
+			System.out.print("Enter h = ");
+			h = Float.parseFloat(br.readLine());
+			n = (b-a)/h;
+		}
 
 		//System.out.println("check "+(a+1)+" "+(b+1)+" "+h);
 		for (int i=0;i<=(int)(n);i++) {
@@ -41,7 +50,7 @@ class NumericIntegration {
 		String[] list = new String[valueOfX.size()];
 		valueOfX.toArray(list);
 		eachFOfX = formule;
-                for(String eachXValue : valueOfX) {
+		for(String eachXValue : valueOfX) {
 			System.out.println("eachXValue: "+eachXValue+" a: "+a+" b: "+b);
 			eachFOfX = formule;
 			if (!eachXValue.equals(String.valueOf(a)) && !eachXValue.equals(String.valueOf(b)) ){ 
@@ -59,5 +68,6 @@ class NumericIntegration {
 		System.out.println("First: "+firstPlusLast+" second: "+secondExp);
 		double finalTrapezoidalIntergralValue = h/2*(firstPlusLast + secondExp);
 		System.out.println("Final answer: "+finalTrapezoidalIntergralValue);
-        }
+	}
+	public static void main(String args[]){}
 }
