@@ -18,10 +18,9 @@ import javax.script.ScriptException;
 class NumericIntegration {
         public static void main(String args[]) throws ScriptException,IOException {
 		float a,b,n;
-		int value = 1;
 		String formule , eachFOfX;
 		List<String> valueOfX = new ArrayList<String>();
-		double secondExp = 0.0000 ;
+		double secondExp = 0.0000 , firstPlusLast= 0.0000;
 		float h;
 		ScriptEngineManager mgr = new ScriptEngineManager();
 		ScriptEngine engine = mgr.getEngineByName("JavaScript");
@@ -38,7 +37,7 @@ class NumericIntegration {
 		h = (b-a)/n;
 
 		//System.out.println("check "+(a+1)+" "+(b+1)+" "+h);
-		for (int i=0;i<=(int)n;i++) {
+		for (int i=0;i<=(int)(n);i++) {
 			//System.out.println("i = "+i);
 			valueOfX.add(String.format("%s",a+(i*h)));
 		}
@@ -46,20 +45,22 @@ class NumericIntegration {
 		valueOfX.toArray(list);
 		eachFOfX = formule;
                 for(String eachXValue : valueOfX) {
-			//System.out.println("eachXValue: "+eachXValue);
+			System.out.println("eachXValue: "+eachXValue+" a: "+a+" b: "+b);
 			eachFOfX = formule;
-			eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
-			secondExp = secondExp + (double)engine.eval(eachFOfX);
-			//System.out.println("secondExp: "+secondExp);
+			if (!eachXValue.equals(String.valueOf(a)) && !eachXValue.equals(String.valueOf(b)) ){ 
+				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
+				secondExp = secondExp + (double)engine.eval(eachFOfX);
+			}
+			else{
+				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
+				firstPlusLast = firstPlusLast + (double)engine.eval(eachFOfX);
+			}
+			System.out.println("firstExp: "+firstPlusLast);
+			System.out.println("secondExp: "+secondExp);
 		}
-		System.out.println("sec "+secondExp);
-                double even=0.0,odd=0.0;
-                for(int i=1;i<=5;++i){
-                        System.out.println("value "+i+"= "+Math.pow(Math.cos(i*Math.PI/12.0),0.5));
-                                even=even+Math.pow(Math.sin(i*Math.PI/12.0),0.5);
-                }
-                double firstPlusLast = Math.pow(Math.sin(0*Math.PI/12.0),0.5) + Math.pow(Math.sin(6*Math.PI/12.0),0.5);
-                double result = Math.PI/(2*12.0)*(firstPlusLast + (2.0*(even)));
-                System.out.println("\nresult="+result);
+		secondExp = 2 * secondExp;
+		System.out.println("First: "+firstPlusLast+" second: "+secondExp);
+		double finalTrapezoidalIntergralValue = h/2*(firstPlusLast + secondExp);
+		System.out.println(finalTrapezoidalIntergralValue);
         }
 }
