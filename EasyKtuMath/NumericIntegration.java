@@ -40,10 +40,12 @@ public class NumericIntegration {
 		private static double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000, evaluated= 0.0000;
 		private static float h;
 		private static int i = 0;
-		private static boolean debug = false;
+		private static boolean debug;
 		private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 	public static void trapezoidalIntegration() throws IOException {
-		// create character stream object to read from console
+		secondExp = 0.0000 ; firstPlusLast= 0.0000 ; thirdExp= 0.0000; evaluated= 0.0000;
+		debug = false;
 		System.out.print("Enter f(x) = ");
 		formule = br.readLine();
 		System.out.print("Enter a = ");
@@ -52,7 +54,7 @@ public class NumericIntegration {
 		b = Float.parseFloat(br.readLine());
 		System.out.print("Is the value of n given?(y/n) :- ");
 		choice = br.readLine();
-		if(choice.equals("y") || choice.equals("Y")){ 
+		if(choice.equalsIgnoreCase("y")){ 
 			System.out.print("Enter n = ");
 			n = Float.parseFloat(br.readLine());
 			h = (b-a)/n;
@@ -121,7 +123,8 @@ public class NumericIntegration {
 		System.out.println("Final answer: "+finalTrapezoidalIntergralValue);
 	}
 	public static void simpsonsIntegration() throws IOException {
-		// create character stream object to read from console
+		secondExp = 0.0000 ; firstPlusLast= 0.0000 ; thirdExp= 0.0000; evaluated= 0.0000;
+		debug = false;
 		System.out.print("Enter f(x) = ");
 		formule = br.readLine();
 		System.out.print("Enter a = ");
