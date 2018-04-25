@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class gui extends Frame {
-	private static JComboBox<String> jcb;
+	private static JComboBox<String> jcb = new JComboBox<>();
 	private static String pathReg = "./reg.txt" , pathSgpa = "./sgpa.txt"; 
 	private static String key,value;
 	private static HashMap<String,String> map = new HashMap<>();
@@ -30,35 +30,54 @@ class gui extends Frame {
 		// explictely setting layout. default is Flow itself
 		setLayout(new FlowLayout());
 
-		jcb = new JComboBox<>();
+		//jcb = new JComboBox<>();
 		jcb.setEditable(true);
 
 		add(jcb);
 
+		
+		/*jcb.getEditor().addActionListener(new ActionListener() {
+			@Override public void actionPerformed(ActionEvent arg0) {
+
+			String selectedRegNum = (String) jcb.getSelectedItem();
+			value = map.get(selectedRegNum);
+			if (value!=null) {
+				JOptionPane.showMessageDialog(null,value);
+			} 
+			else {
+				JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
+			}
+			}               
+		});*/
 		theHandler handler = new theHandler();
-		jcb.addActionListener(handler);
+		jcb.addItemListener(handler);
+		//jcb.setEnabled(false);
 	}
 
 	// EventHandling class
-	private class theHandler implements ActionListener {
-		public void actionPerformed(ActionEvent event) {
-			String selectedBook = (String) jcb.getSelectedItem();
-
-			if (selectedBook.equals("FIT16CS086")) {
-				System.out.println("Good choice!");
-			} else if (selectedBook.equals("Head First Java")) {
-				System.out.println("Nice pick, too!");
+	private class theHandler implements ItemListener {
+	public void itemStateChanged(ItemEvent event) {	
+		String selectedRegNum = (String) jcb.getSelectedItem();
+		value = map.get(selectedRegNum);
+		//if(event.SELECTED == 1){
+			//jcb.setEnabled(true);
+			if (value!=null) {
+				JOptionPane.showMessageDialog(null,value);
+			} 
+			else {
+				JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
 			}
-		}
+		//}
+	}
 	}
 }
 public class CheckSgpa {
 	public static void main(String[] args) throws IOException , InterruptedException, FileNotFoundException {
-		gui frame = new gui();
 		Thread t = new Thread(new Runnable(){
 			public void run(){
 				try{
-					frame.populate();
+					gui.populate();
+					Thread.sleep(100);
 				}
 				catch (Exception e){
 					System.out.println(e);
@@ -67,6 +86,7 @@ public class CheckSgpa {
 		});
 		t.start();
 		t.join();
+		gui frame = new gui();
 		frame.setSize(600,600);
 		frame.setVisible(true);	
 	}
