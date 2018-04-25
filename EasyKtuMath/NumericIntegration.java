@@ -99,5 +99,75 @@ public class NumericIntegration {
 		double finalTrapezoidalIntergralValue = h/2*(firstPlusLast + secondExp);
 		System.out.println("Final answer: "+finalTrapezoidalIntergralValue);
 	}
+	public static void simpsonsIntegration() throws IOException {
+		float a,b,n;
+		String formule , eachFOfX, choice;
+		List<String> valueOfX = new ArrayList<String>();
+		double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000;
+		float h;
+		int i = 0;
+
+		// create character stream object to read from console
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("Enter f(x) = ");
+		formule = br.readLine();
+		System.out.print("Enter a = ");
+		a = Float.parseFloat(br.readLine()); // readline() returns String by default
+		System.out.print("Enter b = ");
+		b = Float.parseFloat(br.readLine());
+		System.out.print("Is the value of n given?(y/n) :- ");
+		choice = br.readLine();
+		if(choice.equals("y") || choice.equals("Y")){ 
+			System.out.print("Enter n = ");
+			n = Float.parseFloat(br.readLine());
+			h = (b-a)/n;
+		}
+		else{
+			System.out.print("Enter h = ");
+			h = Float.parseFloat(br.readLine());
+			n = (b-a)/h;
+		}
+		
+		// add values of x from x0 to xn to a List
+		for (i=0;i<=(int)(n);i++) {
+			valueOfX.add(String.format("%s",a+(i*h)));
+		}
+		// convert list to array of String[]
+		String[] list = new String[valueOfX.size()];
+		valueOfX.toArray(list);
+		
+		// store f(x)
+		eachFOfX = formule;
+		i=0;
+		// iterate through each value of X
+		for(String eachXValue : valueOfX) {
+			System.out.println("eachXValue: "+eachXValue+" a: "+a+" b: "+b);
+			
+			// replace exponential e with its value
+			eachFOfX = eachFOfX.replace("e",String.valueOf("2.71828"));
+			
+			eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
+			if( i++ == 0 || i++ ==  (n+1) ){
+				firstPlusLast = firstPlusLast + (double)RecursiveParser.eval(eachFOfX);
+			}
+			else if( (i++) % 2 != 0 ){
+				secondExp = secondExp + (double)RecursiveParser.eval(eachFOfX);
+			}
+			else{
+				thirdExp = thirdExp + (double)RecursiveParser.eval(eachFOfX);
+			}
+			
+			System.out.println("firstExp: "+firstPlusLast);
+			System.out.println("secondExp: "+secondExp);
+			System.out.println("thirdExp: "+thirdExp);
+			// restore value of f(x) to orginal formula after replacing
+			eachFOfX = formule;
+		}
+		secondExp = 4 * secondExp;
+		thirdExp = 2 * thirdExp;
+		System.out.println("First: "+firstPlusLast+" second: "+secondExp);
+		double finalSimpsonsIntergralValue = h/3*(firstPlusLast + secondExp + thirdExp);
+		System.out.println("Final answer: "+finalSimpsonsIntergralValue);
+	}
 	public static void main(String args[]){}
 }
