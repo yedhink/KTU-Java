@@ -1,6 +1,10 @@
 package MATH.modulesix;
 import java.lang.*;
-
+// Format:-
+// expression = term | expression `+` term | expression `-` term
+// term = factor | term `*` factor | term `/` factor
+// factor = `+` factor | `-` factor | `(` expression `)`
+//        | number | functionName factor | factor `^` factor
 public class RecursiveParser {
 	public static double eval(final String str) {
 		return new Object() {
@@ -25,12 +29,6 @@ public class RecursiveParser {
 				if (pos < str.length()) throw new RuntimeException("Unexpected: " + (char)ch);
 				return x;
 			}
-
-			// Grammar:
-			// expression = term | expression `+` term | expression `-` term
-			// term = factor | term `*` factor | term `/` factor
-			// factor = `+` factor | `-` factor | `(` expression `)`
-			//        | number | functionName factor | factor `^` factor
 
 			double parseExpression() {
 				double x = parseTerm();
