@@ -13,6 +13,7 @@ public class Main {
 		int choice = Integer.parseInt(br.readLine());
 		switch(choice){
 			case 1: NumericIntegration.trapezoidalIntegration();
+			case 2: NumericIntegration.simpsonsIntegration();
 		}
 	}	
 }
