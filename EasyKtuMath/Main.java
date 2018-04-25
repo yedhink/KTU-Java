@@ -12,8 +12,8 @@ public class Main {
 		System.out.print("Enter choice = ");
 		int choice = Integer.parseInt(br.readLine());
 		switch(choice){
-			case 1: NumericIntegration.trapezoidalIntegration();
-			case 2: NumericIntegration.simpsonsIntegration();
+			case 1: NumericIntegration.trapezoidalIntegration();break;
+			case 2: NumericIntegration.simpsonsIntegration();break;
 		}
 	}	
 }
