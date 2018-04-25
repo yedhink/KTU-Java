@@ -1,4 +1,5 @@
 package MATH.modulesix;
+import MATH.modulesix.*;
 import java.lang.*;
 import java.io.*;
 import java.util.*;
@@ -22,9 +23,6 @@ class NumericIntegration {
 		List<String> valueOfX = new ArrayList<String>();
 		double secondExp = 0.0000 , firstPlusLast= 0.0000;
 		float h;
-		ScriptEngineManager mgr = new ScriptEngineManager();
-		ScriptEngine engine = mgr.getEngineByName("JavaScript");
-		//System.out.println(engine.eval("1/(1+1)"));	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter f(x) = ");
 		formule = br.readLine();
@@ -38,7 +36,6 @@ class NumericIntegration {
 
 		//System.out.println("check "+(a+1)+" "+(b+1)+" "+h);
 		for (int i=0;i<=(int)(n);i++) {
-			//System.out.println("i = "+i);
 			valueOfX.add(String.format("%s",a+(i*h)));
 		}
 		String[] list = new String[valueOfX.size()];
@@ -49,11 +46,11 @@ class NumericIntegration {
 			eachFOfX = formule;
 			if (!eachXValue.equals(String.valueOf(a)) && !eachXValue.equals(String.valueOf(b)) ){ 
 				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
-				secondExp = secondExp + (double)engine.eval(eachFOfX);
+				secondExp = secondExp + (double)RecursiveParser.eval(eachFOfX);
 			}
 			else{
 				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
-				firstPlusLast = firstPlusLast + (double)engine.eval(eachFOfX);
+				firstPlusLast = firstPlusLast + (double)RecursiveParser.eval(eachFOfX);
 			}
 			System.out.println("firstExp: "+firstPlusLast);
 			System.out.println("secondExp: "+secondExp);
@@ -61,6 +58,6 @@ class NumericIntegration {
 		secondExp = 2 * secondExp;
 		System.out.println("First: "+firstPlusLast+" second: "+secondExp);
 		double finalTrapezoidalIntergralValue = h/2*(firstPlusLast + secondExp);
-		System.out.println(finalTrapezoidalIntergralValue);
+		System.out.println("Final answer: "+finalTrapezoidalIntergralValue);
         }
 }
