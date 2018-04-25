@@ -39,6 +39,7 @@ public class NumericIntegration {
 		private static double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000;
 		private static float h;
 		private static int i = 0;
+		private static boolean debug = false;
 	public static void trapezoidalIntegration() throws IOException {
 		// create character stream object to read from console
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -61,6 +62,11 @@ public class NumericIntegration {
 			n = (b-a)/h;
 		}
 		
+		System.out.print("1) I want all steps to be shown in output\n2) I only want final integral value\nChoice = ");
+		if(br.readLine().equals("1")){
+			debug = true;
+		}
+
 		// add values of x from x0 to xn to a List
 		for (i=0;i<=(int)(n);i++) {
 			valueOfX.add(String.format("%s",a+(i*h)));
@@ -71,10 +77,13 @@ public class NumericIntegration {
 		
 		// store f(x)
 		eachFOfX = formule;
+		if(debug){
+			System.out.printf("a : %f\nb : %f\nn : %f\nh : %f\nx : ",a,b,n,h);
+		}
 
 		// iterate through each value of X
 		for(String eachXValue : valueOfX) {
-			System.out.println("eachXValue: "+eachXValue+" a: "+a+" b: "+b);
+			if(debug) System.out.print(eachXValue+"  ");
 			
 			// replace exponential e with its value
 			eachFOfX = eachFOfX.replace("e",String.valueOf("2.71828"));
@@ -89,13 +98,13 @@ public class NumericIntegration {
 				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
 				firstPlusLast = firstPlusLast + (double)RecursiveParser.eval(eachFOfX);
 			}
-			System.out.println("firstExp: "+firstPlusLast);
-			System.out.println("secondExp: "+secondExp);
 			// restore value of f(x) to orginal formula after replacing
 			eachFOfX = formule;
 		}
 		secondExp = 2 * secondExp;
-		System.out.println("First: "+firstPlusLast+" second: "+secondExp);
+		if(debug){
+			System.out.printf("\nh/2 : %f\nf(x0) + f(xn) : %f\nf(x1)+f(x2)+f(x3)+...f(x[n-1]) : %f\n",(h/2),firstPlusLast,secondExp);
+		}
 		double finalTrapezoidalIntergralValue = h/2*(firstPlusLast + secondExp);
 		System.out.println("Final answer: "+finalTrapezoidalIntergralValue);
 	}
