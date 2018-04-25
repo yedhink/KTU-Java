@@ -3,18 +3,34 @@ import MATH.modulesix.RecursiveParser;
 import java.lang.*;
 import java.io.*;
 import java.util.*;
-import javax.script.ScriptEngineManager;
-import javax.script.ScriptEngine;
-import javax.script.ScriptException;
-/*  a
- *  (f(x)dx = h/2 [ (f(x)+f(xn)) + 2 (f(x1)+f(x2)+f(x3)+...f(x[n-1])) ] 
- *  )
- *  b	
- *   x : 0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2
- * f(x): ?  ?   ?   ?   ?  ?  ?   ?   ?   ?  ?
- * if x is given like above in question then choose first value as a and lastvalue as b
- * i.e :- a=x0 and b=xn
- * h = (b-a)/n , where n = count(x)
+/*  
+ *  Operators currently usable:-
+ *  1) +
+ *  2) -
+ *  3) *
+ *  4) /
+ *  5) ^(raise to or power function)
+ *  6) sqrt(value) , eg:- sqrt(2)
+ *  7) sin(), cos(), tan()
+ *  8) e , exponential eg:- e^(x^2) :- e raise to x square
+ *  8) ( and ) for precedence
+ *  
+ *  Input Format for f(x) , an example:-
+ *  	Enter f(x) = 1/(1+x^2)
+ *  
+ *
+ *
+ *  TRAPEZOIDAL METHOD:-
+ *	    a
+ *	    (f(x)dx = h/2 [ (f(x)+f(xn)) + 2 * (f(x1)+f(x2)+f(x3)+...f(x[n-1])) ] 
+ *	    )
+ *	    b
+ *	    exmaple:-
+ *	      x : 0  0.2  0.4  0.6  0.8  1  1.2  1.4  1.6  1.8  2
+ *	    f(x): ?   ?    ?    ?    ?   ?   ?    ?    ?    ?   ?
+ *	    if x is given like above in question then choose first value as a and lastvalue as b
+ *	    i.e :- a=x0 and b=xn
+ *	    h = (b-a)/n , where n = count(x)
  */
 public class NumericIntegration {
 	public static void trapezoidalIntegration() throws IOException {
@@ -23,14 +39,16 @@ public class NumericIntegration {
 		List<String> valueOfX = new ArrayList<String>();
 		double secondExp = 0.0000 , firstPlusLast= 0.0000;
 		float h;
+
+		// create character stream object to read from console
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter f(x) = ");
 		formule = br.readLine();
 		System.out.print("Enter a = ");
-		a = Float.parseFloat(br.readLine());
+		a = Float.parseFloat(br.readLine()); // readline() returns String by default
 		System.out.print("Enter b = ");
 		b = Float.parseFloat(br.readLine());
-		System.out.print("Is the value of n given?(y/n) = ");
+		System.out.print("Is the value of n given?(y/n) :- ");
 		choice = br.readLine();
 		if(choice.equals("y") || choice.equals("Y")){ 
 			System.out.print("Enter n = ");
@@ -42,27 +60,39 @@ public class NumericIntegration {
 			h = Float.parseFloat(br.readLine());
 			n = (b-a)/h;
 		}
-
-		//System.out.println("check "+(a+1)+" "+(b+1)+" "+h);
+		
+		// add values of x from x0 to xn to a List
 		for (int i=0;i<=(int)(n);i++) {
 			valueOfX.add(String.format("%s",a+(i*h)));
 		}
+		// convert list to array of String[]
 		String[] list = new String[valueOfX.size()];
 		valueOfX.toArray(list);
+		
+		// store f(x)
 		eachFOfX = formule;
+
+		// iterate through each value of X
 		for(String eachXValue : valueOfX) {
 			System.out.println("eachXValue: "+eachXValue+" a: "+a+" b: "+b);
-			eachFOfX = formule;
+			
+			// replace exponential e with its value
+			eachFOfX = eachFOfX.replace("e",String.valueOf("2.71828"));
+			
+			// create ( f(x1)+f(x2)+f(x3)+...f(x[n-1]) )
 			if (!eachXValue.equals(String.valueOf(a)) && !eachXValue.equals(String.valueOf(b)) ){ 
 				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
 				secondExp = secondExp + (double)RecursiveParser.eval(eachFOfX);
 			}
+			// create ( f(x0) + f(xn) )
 			else{
 				eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
 				firstPlusLast = firstPlusLast + (double)RecursiveParser.eval(eachFOfX);
 			}
 			System.out.println("firstExp: "+firstPlusLast);
 			System.out.println("secondExp: "+secondExp);
+			// restore value of f(x) to orginal formula after replacing
+			eachFOfX = formule;
 		}
 		secondExp = 2 * secondExp;
 		System.out.println("First: "+firstPlusLast+" second: "+secondExp);
