@@ -8,10 +8,10 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int choice;
 		String proceed = "n";
-		System.out.println("1)Trapezoidal Integration\n2)Simpsons Integration");
 
 		// Enter which Method of Integration you want
 		do{
+			System.out.println("1)Trapezoidal Integration\n2)Simpsons Integration");
 			System.out.print("Enter choice = ");
 			choice = Integer.parseInt(br.readLine());
 			switch(choice){
