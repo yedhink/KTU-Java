@@ -35,16 +35,15 @@ import java.util.*;
 public class NumericIntegration {
 		private static float a,b,n;
 		private static String formule , eachFOfX, choice;
-		private static List<String> valueOfX = new ArrayList<String>();
+		private static List<String> valueOfX;
 		private static List<String> listFOfX; 
 		private static double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000, evaluated= 0.0000;
 		private static float h;
 		private static int i = 0;
 		private static boolean debug = false;
-
+		private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	public static void trapezoidalIntegration() throws IOException {
 		// create character stream object to read from console
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter f(x) = ");
 		formule = br.readLine();
 		System.out.print("Enter a = ");
@@ -68,6 +67,8 @@ public class NumericIntegration {
 		if(br.readLine().equals("1")){
 			debug = true;
 		}
+
+		valueOfX = new ArrayList<String>();
 
 		// add values of x from x0 to xn to a List
 		for (i=0;i<=(int)(n);i++) {
@@ -121,7 +122,6 @@ public class NumericIntegration {
 	}
 	public static void simpsonsIntegration() throws IOException {
 		// create character stream object to read from console
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter f(x) = ");
 		formule = br.readLine();
 		System.out.print("Enter a = ");
@@ -141,44 +141,67 @@ public class NumericIntegration {
 			n = (b-a)/h;
 		}
 		
+		
+		System.out.print("1) I want all steps to be shown in output\n2) I only want final integral value\nChoice = ");
+		if(br.readLine().equals("1")){
+			debug = true;
+		}
+
+		valueOfX = new ArrayList<String>();
+
 		// add values of x from x0 to xn to a List
 		for (i=0;i<=(int)(n);i++) {
 			valueOfX.add(String.format("%s",a+(i*h)));
 		}
+
 		// convert list to array of String[]
 		String[] list = new String[valueOfX.size()];
 		valueOfX.toArray(list);
 		
-		// store f(x)
+		// store f(x) inital value
 		eachFOfX = formule;
+		
+		if(debug){
+			listFOfX = new ArrayList<String>();
+			System.out.printf("a : %f\nb : %f\nn : %f\nh : %f\nx : ",a,b,n,h);
+		}
+
 		i=0;
 		// iterate through each value of X
 		for(String eachXValue : valueOfX) {
-			System.out.println("eachXValue: "+eachXValue+" a: "+a+" b: "+b);
+			if(debug) System.out.print(eachXValue+"  ");
 			
 			// replace exponential e with its value
 			eachFOfX = eachFOfX.replace("e",String.valueOf("2.71828"));
 			
 			eachFOfX = eachFOfX.replace("x",String.valueOf(eachXValue));
+			evaluated = (double)RecursiveParser.eval(eachFOfX);
+			if(debug) listFOfX.add(String.valueOf(evaluated));
+
 			if( i == 0 || i ==  (n) ){
-				firstPlusLast = firstPlusLast + (double)RecursiveParser.eval(eachFOfX);
+				firstPlusLast = firstPlusLast + evaluated;
 			}
 			else if( (i) % 2 != 0 ){
-				secondExp = secondExp + (double)RecursiveParser.eval(eachFOfX);
+				secondExp = secondExp + evaluated;
 			}
 			else if( (i) % 2 == 0 ){
-				thirdExp = thirdExp + (double)RecursiveParser.eval(eachFOfX);
+				thirdExp = thirdExp + evaluated;
 			}
 			++i;
-			System.out.println("firstExp: "+firstPlusLast);
-			System.out.println("secondExp: "+secondExp);
-			System.out.println("thirdExp: "+thirdExp);
 			
 			// restore value of f(x) to orginal formula after replacing
 			eachFOfX = formule;
 		}
-		System.out.println("First: "+firstPlusLast+" second: "+(4 * secondExp)+" third: "+(2 * thirdExp));
-		double finalSimpsonsIntergralValue = h/3*(firstPlusLast + secondExp + thirdExp);
+		if(debug){
+			list = new String[listFOfX.size()];
+			listFOfX.toArray(list);
+			System.out.print("\nf(x) : ");
+			for ( String fx : listFOfX){
+				System.out.printf("%s  ", fx);
+			}
+			System.out.printf("\nh/3 : %f\nf(x0) + f(xn) : %f\nf(x1)+f(x3)+f(x5)+...f(x[n-1] : %f\nf(x2)+f(x4)+f(x6)+...f(x[n-2] : %f\n",(h/3),firstPlusLast,secondExp,thirdExp);
+		}
+		double finalSimpsonsIntergralValue = h/3*(firstPlusLast + (4*secondExp) + (2*thirdExp));
 		System.out.println("Final answer: "+finalSimpsonsIntergralValue);
 	}
 	public static void main(String args[]){}
