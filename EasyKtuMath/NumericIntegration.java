@@ -33,13 +33,13 @@ import java.util.*;
  *	    h = (b-a)/n , where n = count(x)
  */
 public class NumericIntegration {
+		private static float a,b,n;
+		private static String formule , eachFOfX, choice;
+		private static List<String> valueOfX = new ArrayList<String>();
+		private static double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000;
+		private static float h;
+		private static int i = 0;
 	public static void trapezoidalIntegration() throws IOException {
-		float a,b,n;
-		String formule , eachFOfX, choice;
-		List<String> valueOfX = new ArrayList<String>();
-		double secondExp = 0.0000 , firstPlusLast= 0.0000;
-		float h;
-
 		// create character stream object to read from console
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter f(x) = ");
@@ -62,7 +62,7 @@ public class NumericIntegration {
 		}
 		
 		// add values of x from x0 to xn to a List
-		for (int i=0;i<=(int)(n);i++) {
+		for (i=0;i<=(int)(n);i++) {
 			valueOfX.add(String.format("%s",a+(i*h)));
 		}
 		// convert list to array of String[]
@@ -100,13 +100,6 @@ public class NumericIntegration {
 		System.out.println("Final answer: "+finalTrapezoidalIntergralValue);
 	}
 	public static void simpsonsIntegration() throws IOException {
-		float a,b,n;
-		String formule , eachFOfX, choice;
-		List<String> valueOfX = new ArrayList<String>();
-		double secondExp = 0.0000 , firstPlusLast= 0.0000 , thirdExp= 0.0000;
-		float h;
-		int i = 0;
-
 		// create character stream object to read from console
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter f(x) = ");
