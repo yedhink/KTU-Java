@@ -27,31 +27,16 @@ class gui extends Frame {
 			jcb.addItem(key);
 			map.put(key, value);
 		}
+		fileR.close();
+		fileS.close();
 	}
 	public gui(){
 		// explictely setting layout. default is Flow itself
 		setLayout(new FlowLayout());
-
-		//jcb = new JComboBox<>();
 		jcb.setEditable(true);
 		add(jcb);
-
-		
 		buttonFind = new JButton("Find Sgpa");
 		add(buttonFind);
-		/*jcb.getEditor().addActionListener(new ActionListener() {
-			@Override public void actionPerformed(ActionEvent arg0) {
-
-			String selectedRegNum = (String) jcb.getSelectedItem();
-			value = map.get(selectedRegNum);
-			if (value!=null) {
-				JOptionPane.showMessageDialog(null,value);
-			} 
-			else {
-				JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
-			}
-			}               
-		});*/
 		theHandler handler = new theHandler();
 		buttonFind.addActionListener(handler);
 	}
