@@ -42,13 +42,6 @@ class gui extends Frame {
 	public gui(){
 		// explictely setting layout. default is Flow itself
 		setLayout(new FlowLayout());
-		/*
-		frame.addWindowListener(new WindowAdapter() {
-			public void windowClosing(WindowEvent we) {
-				dispose();
-			}
-		});
-		*/
 		jcb.setEditable(true);
 		map = (HashMap<String,String>)sortByComparator((Map<String,String>)map,false);
 		add(jcb);
@@ -80,8 +73,6 @@ class gui extends Frame {
 					}
 				} 
 				else {
-					//JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
-					//new UIManager();
 					UIManager.put("OptionPane.background", Color.decode("#FF0000"));
 					UIManager.put("Panel.background", Color.decode("#FF0000"));
 					JOptionPane.showMessageDialog(null, "No such register number in S3 CS", "Red", JOptionPane.INFORMATION_MESSAGE);
