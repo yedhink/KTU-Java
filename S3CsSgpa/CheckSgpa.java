@@ -101,15 +101,15 @@ class gui extends Frame {
 		List<Entry<String, String>> list = new LinkedList<Entry<String, String>>(unsortMap.entrySet());
 		// Sorting the list based on values
 		Collections.sort(list, new Comparator<Entry<String, String>>(){
-					public int compare(Entry<String, String> o1,Entry<String, String> o2){
-						if (order){
-							return o1.getValue().compareTo(o2.getValue());
-						}
-						else{
-							return o2.getValue().compareTo(o1.getValue());
-						}
-					}
-				});
+			public int compare(Entry<String, String> o1,Entry<String, String> o2){
+				if (order){
+					return o1.getValue().compareTo(o2.getValue());
+				}
+				else{
+					return o2.getValue().compareTo(o1.getValue());
+				}
+			}
+		});
 
 		// Maintaining insertion order with the help of LinkedList
 		Map<String, String> sortedMap = new LinkedHashMap<String, String>();
@@ -137,7 +137,17 @@ public class CheckSgpa {
 		gui frame = new gui();
 		frame.setSize(600,600);
 		frame.setBackground(Color.decode("#000"));
-		frame.setVisible(true);	
+		frame.setVisible(true);
+		frame.addWindowListener(new WindowAdapter() {
+
+			public void windowClosing(WindowEvent we) {
+
+				dispose();
+			}
+		}
+		);
 	}
+}
+}
 }
 
