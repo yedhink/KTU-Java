@@ -39,43 +39,44 @@ In the programs that i've done , i have covered and most importantly used concep
 13)[Event Hadnling](https://docs.oracle.com/javase/tutorial/uiswing/events/index.html), 
 14)[Data Structures](http://java.wikia.com/wiki/Data_Structures) etc.
 
-A bit about what each directory in my repo has to offer :
+A bit about what each directory in my repo has to offer
+
 `
 1) EastKtuMath
-      └──── Numerical Integration using Trapezoidal or Simpsons Methods
-      └──── Get all the math steps as output (optional)
-      └──── Streams for IO 
-      └──── An exquisite expression parser included within
-      └──── And yes you guessed it right! I used to do all my math assignements this way. :D
+	└──── Numerical Integration using Trapezoidal or Simpsons Methods
+	└──── Get all the math steps as output (optional)
+	└──── Streams for IO 
+	└──── An exquisite expression parser included within
+	└──── And yes you guessed it right! I used to do all my math assignements this way. :D
 
 2) Threads
-      └──── By Runnable Interface 
-      └──── By Extending Thread Class
-      └──── Runnable Interface in Main
-      └──── Synchronization
-      └──── Some fine practice problems
+	└──── By Runnable Interface 
+	└──── By Extending Thread Class
+	└──── Runnable Interface in Main
+	└──── Synchronization
+	└──── Some fine practice problems
 
 3) EventHandling
-      └──── Creates a simple login Graphical User Interface(GUI)
-      └──── Covers basics of java.awt and some of Swing
-      └──── Learn basics of Listeners 
-      └──── Basics from this required in upcoming programs
+	└──── Creates a simple login Graphical User Interface(GUI)
+	└──── Covers basics of java.awt and some of Swing
+	└──── Learn basics of Listeners 
+	└──── Basics from this required in upcoming programs
 
 4) Overloading and Overriding
-      └──── Learn the basics of Overloading,Overriding
-      └──── Dynamic Method Dispatching 
-      └──── What's super() and what is "this"? You will see
-      └──── Basics of jump statements
-      └──── Basics of Packages
+	└──── Learn the basics of Overloading,Overriding
+	└──── Dynamic Method Dispatching 
+	└──── What's super() and what is "this"? You will see
+	└──── Basics of jump statements
+	└──── Basics of Packages
 
 5) S3CsSgpa      
-      └──── Well? Want to apply what you've learnt? This is your opportunity. 
-      └──── Creates a simple GUI to find your SGPA
-      └──── File Handling basics
-      └──── Sorting 
-      └──── Data Structures 
-      └──── Provides a great idea on javax.swing(the 'x' matters :p) 
-      └──── Love designing? Play with java.awt.Color
+	└──── Well? Want to apply what you've learnt? This is your opportunity. 
+	└──── Creates a simple GUI to find your SGPA
+	└──── File Handling basics
+	└──── Sorting 
+	└──── Data Structures 
+	└──── Provides a great idea on javax.swing(the 'x' matters :p) 
+	└──── Love designing? Play with java.awt.Color
 `      
 
 # What's next?
