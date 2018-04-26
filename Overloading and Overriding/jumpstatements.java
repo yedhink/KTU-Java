@@ -1,6 +1,9 @@
 import java.io.*;
 import java.io.File;
 
+// Learn the basics of JumpStatements, Overloading, The "this" keyword, File Handling,
+// and Exception Handling using try-catch block
+
 class test{
 	int k=7;
 	String word;
@@ -36,12 +39,17 @@ class jumpstatements{
 		boolean flag = false;
 		try{
 			int i = 0;
+			// reading each line as a String from the file
 			while( (fileword = br.readLine()) != null){
 				++i;
 				if( (flag = fileword.equalsIgnoreCase(word)) == true ){
 					System.out.printf("Word present at line %d in file\n",i);
-					break;
+					break; // jumps out of the loop
 				}
+				// Uncomment to understand how continue jump statement works. Results would vary for though.
+				/*if( i%2 == 0 )
+					continue;
+				*/	
 			}
 			if(flag == false)
 				System.out.println("No such word in Dictionary");
