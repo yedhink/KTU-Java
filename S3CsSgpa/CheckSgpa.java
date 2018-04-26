@@ -48,7 +48,12 @@ class gui extends Frame {
 			if(event.getSource() == buttonFind){
 				value = map.get(selectedRegNum);
 				if (value!=null) {
-					JOptionPane.showMessageDialog(null,value);
+					if(selectedRegNum.equals("FIT16CS086")){
+						JOptionPane.showMessageDialog(null,"\tCongrats!You're the topper\nYour sgpa : "+value);
+					}
+					else{
+						JOptionPane.showMessageDialog(null,"Your sgpa : "+value);
+					}
 				} 
 				else {
 					JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
