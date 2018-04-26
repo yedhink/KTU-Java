@@ -1,5 +1,6 @@
 package classExamples.overR.DMD;
-import CHARSEQ.*;
+import CHARSEQ.*; // well, well..look what we have imported here.
+
 class A{
 	void show(){
 		System.out.println("Inside class A");
@@ -28,7 +29,10 @@ class overriding{
 		objB.show();
 		objC.show();
 		csb stud = new csb();
-		System.out.println("\nDynamic Method dispatch: "+stud.revName("Yedhin")+"\n");
+		System.out.println("\nYay! We called the function revName() from another program\nReversed name : "+stud.revName("Yedhin")+"\n");
+		
+		// Dynamic Method Dispatch 
+		System.out.println("Dynamic method dispatch works");
 		A overA = objB;
 		A overC = objB;
 		overA.show();
