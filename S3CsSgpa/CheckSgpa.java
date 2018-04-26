@@ -42,6 +42,13 @@ class gui extends Frame {
 	public gui(){
 		// explictely setting layout. default is Flow itself
 		setLayout(new FlowLayout());
+		/*
+		frame.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent we) {
+				dispose();
+			}
+		});
+		*/
 		jcb.setEditable(true);
 		map = (HashMap<String,String>)sortByComparator((Map<String,String>)map,false);
 		add(jcb);
@@ -138,16 +145,6 @@ public class CheckSgpa {
 		frame.setSize(600,600);
 		frame.setBackground(Color.decode("#000"));
 		frame.setVisible(true);
-		frame.addWindowListener(new WindowAdapter() {
-
-			public void windowClosing(WindowEvent we) {
-
-				dispose();
-			}
-		}
-		);
 	}
-}
-}
 }
 
