@@ -41,7 +41,7 @@ In the programs that i've done , i have covered and most importantly used concep
 
 A bit about what each directory in my repo has to offer
 
-`
+```
 1) EastKtuMath
 	└──── Numerical Integration using Trapezoidal or Simpsons Methods
 	└──── Get all the math steps as output (optional)
@@ -77,7 +77,7 @@ A bit about what each directory in my repo has to offer
 	└──── Data Structures 
 	└──── Provides a great idea on javax.swing(the 'x' matters :p) 
 	└──── Love designing? Play with java.awt.Color
-`      
+```      
 
 # What's next?
 Now what you waiting for? Compile the `*.java` files and run it.
