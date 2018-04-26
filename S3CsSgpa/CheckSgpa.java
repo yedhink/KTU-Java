@@ -2,6 +2,7 @@ package GUIProjects;
 import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
+import javax.swing.JButton;
 import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.event.*;
@@ -13,6 +14,7 @@ import java.util.Map;
 
 class gui extends Frame {
 	private static JComboBox<String> jcb = new JComboBox<>();
+	private static JButton buttonFind;
 	private static String pathReg = "./reg.txt" , pathSgpa = "./sgpa.txt"; 
 	private static String key,value;
 	private static HashMap<String,String> map = new HashMap<>();
@@ -32,10 +34,11 @@ class gui extends Frame {
 
 		//jcb = new JComboBox<>();
 		jcb.setEditable(true);
-
 		add(jcb);
 
 		
+		buttonFind = new JButton("Find Sgpa");
+		add(buttonFind);
 		/*jcb.getEditor().addActionListener(new ActionListener() {
 			@Override public void actionPerformed(ActionEvent arg0) {
 
@@ -50,25 +53,23 @@ class gui extends Frame {
 			}               
 		});*/
 		theHandler handler = new theHandler();
-		jcb.addItemListener(handler);
-		//jcb.setEnabled(false);
+		buttonFind.addActionListener(handler);
 	}
 
 	// EventHandling class
-	private class theHandler implements ItemListener {
-	public void itemStateChanged(ItemEvent event) {	
-		String selectedRegNum = (String) jcb.getSelectedItem();
-		value = map.get(selectedRegNum);
-		//if(event.SELECTED == 1){
-			//jcb.setEnabled(true);
-			if (value!=null) {
-				JOptionPane.showMessageDialog(null,value);
-			} 
-			else {
-				JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
+	private class theHandler implements ActionListener {
+		public void actionPerformed(ActionEvent event) {	
+			String selectedRegNum = (String) jcb.getSelectedItem();
+			if(event.getSource() == buttonFind){
+				value = map.get(selectedRegNum);
+				if (value!=null) {
+					JOptionPane.showMessageDialog(null,value);
+				} 
+				else {
+					JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
+				}
 			}
-		//}
-	}
+		}
 	}
 }
 public class CheckSgpa {
