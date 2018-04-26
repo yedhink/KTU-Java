@@ -3,18 +3,27 @@ import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
+import javax.swing.UIManager;
+import javax.swing.plaf.ColorUIResource;
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.event.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 class gui extends Frame {
 	private static JComboBox<String> jcb = new JComboBox<>();
-	private static JButton buttonFind;
+	private static JButton buttonFind , buttonTopTen;
 	private static String pathReg = "./reg.txt" , pathSgpa = "./sgpa.txt"; 
 	private static String key,value;
 	private static HashMap<String,String> map = new HashMap<>();
@@ -34,17 +43,22 @@ class gui extends Frame {
 		// explictely setting layout. default is Flow itself
 		setLayout(new FlowLayout());
 		jcb.setEditable(true);
+		map = (HashMap<String,String>)sortByComparator((Map<String,String>)map,false);
 		add(jcb);
 		buttonFind = new JButton("Find Sgpa");
 		add(buttonFind);
+		buttonTopTen = new JButton("Find Top Ten");
+		add(buttonTopTen);
 		theHandler handler = new theHandler();
 		buttonFind.addActionListener(handler);
+		buttonTopTen.addActionListener(handler);
 	}
 
 	// EventHandling class
 	private class theHandler implements ActionListener {
 		public void actionPerformed(ActionEvent event) {	
 			String selectedRegNum = (String) jcb.getSelectedItem();
+			new UIManager();
 			if(event.getSource() == buttonFind){
 				value = map.get(selectedRegNum);
 				if (value!=null) {
@@ -52,14 +66,57 @@ class gui extends Frame {
 						JOptionPane.showMessageDialog(null,"\tCongrats!You're the topper\nYour sgpa : "+value);
 					}
 					else{
-						JOptionPane.showMessageDialog(null,"Your sgpa : "+value);
+						//JOptionPane.showMessageDialog(null,"Your sgpa : "+value);
+						UIManager.put("OptionPane.background", Color.decode("#d3d3d3"));
+						UIManager.put("Panel.background", Color.decode("#d3d3d3"));
+						JOptionPane.showMessageDialog(null, "Your sgpa : "+value, "Gray", JOptionPane.INFORMATION_MESSAGE);
 					}
 				} 
 				else {
-					JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
+					//JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
+					//new UIManager();
+					UIManager.put("OptionPane.background", Color.decode("#FF0000"));
+					UIManager.put("Panel.background", Color.decode("#FF0000"));
+					JOptionPane.showMessageDialog(null, "No such register number in S3 CS", "Red", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
+			if(event.getSource() == buttonTopTen){
+				int i = 0;
+				String msg = "";
+				for (Map.Entry<String, String> entry : map.entrySet()) {
+					if(i>10){
+						break;
+					}
+					key = entry.getKey();
+					value = entry.getValue();
+					msg += key+"  "+value+"\n";
+					++i;
+				}
+				JOptionPane.showMessageDialog(null,msg);
+			}
 		}
+	}
+
+	private static Map<String, String> sortByComparator(Map<String, String> unsortMap, final boolean order){
+		List<Entry<String, String>> list = new LinkedList<Entry<String, String>>(unsortMap.entrySet());
+		// Sorting the list based on values
+		Collections.sort(list, new Comparator<Entry<String, String>>(){
+					public int compare(Entry<String, String> o1,Entry<String, String> o2){
+						if (order){
+							return o1.getValue().compareTo(o2.getValue());
+						}
+						else{
+							return o2.getValue().compareTo(o1.getValue());
+						}
+					}
+				});
+
+		// Maintaining insertion order with the help of LinkedList
+		Map<String, String> sortedMap = new LinkedHashMap<String, String>();
+		for (Entry<String, String> entry : list){
+			sortedMap.put(entry.getKey(), entry.getValue());
+		}
+		return sortedMap;
 	}
 }
 public class CheckSgpa {
@@ -79,6 +136,7 @@ public class CheckSgpa {
 		t.join();
 		gui frame = new gui();
 		frame.setSize(600,600);
+		frame.setBackground(Color.decode("#000"));
 		frame.setVisible(true);	
 	}
 }
