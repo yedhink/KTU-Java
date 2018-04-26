@@ -1,6 +1,6 @@
 # Introduction
-This repo consists of my work on Java and the simple programs which i had done inorder to learn Java. To be specific my aim was to familiarize
-with the APJ Abdul Kalam Technological University's (initially Kerala Technological University(KTU)) [syllabus](https://drive.google.com/file/d/0B9ojglPaasIEUUFuSVRXbDlZTEk/view) for Java. 
+This repo consists of my work on Java and the simple programs which i had done inorder to learn Java.
+To be specific my aim was to familiarize with the APJ Abdul Kalam Technological University's (initially Kerala Technological University(KTU)) [syllabus](https://drive.google.com/file/d/0B9ojglPaasIEUUFuSVRXbDlZTEk/view) for Java.
 Created this repository with the aim of helping out my friends and others to understand the basics of Java and to understand its scope by doing some programs. 
 
 # Requirements
