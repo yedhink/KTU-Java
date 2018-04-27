@@ -94,14 +94,14 @@ Then compile into the same directory (which the "." represents) by :
 
 After creating the compiled .class file, just run it using (avoid the .class extension) :
 
-> `java name_of_the_compiledfile_you_want_to_run`
+> `java classWhichConsistsOfMainMethod`
 
 What if it's part of a Package? No problemo. After compiling , Run :
 
 > `java nameOfPackage.filename`
 
 # Overviews
-![](https://github.com/yedhink/KTU-Java/blob/master/.gif/EasyKtuMath.gif)
+![](https://github.com/yedhink/KTU-Java/blob/master/.gif/EasyKtuMath.gif "Run the Main class only")
 
 # Contribute
 Have you been looking for open source repositories to contribute? Look no further! You have come to the right place. Try and complete the TODO list part of each program.
