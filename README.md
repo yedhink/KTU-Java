@@ -100,6 +100,9 @@ What if it's part of a Package? No problemo. After compiling , Run :
 
 > `java nameOfPackage.filename`
 
+# Overviews
+![EasyKtuMath](https://imgur.com/p9lhd7k "Run the Main only in this case")
+
 # Contribute
 Have you been looking for open source repositories to contribute? Look no further! You have come to the right place. Try and complete the TODO list part of each program.
 
