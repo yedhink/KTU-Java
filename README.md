@@ -121,7 +121,7 @@ In the programs that i've done , i have covered and most importantly used concep
 ```      
 
 # What's next?
-Now what you waiting for? Compile the all the `*.java` files and run it.  
+Now what you waiting for? Compile all the `*.java` files and run it.  
 If you're using an IDE like Intellij then i suggest you follow this [documentation](https://www.jetbrains.com/help/idea/2017.1/creating-running-and-packaging-your-first-java-application.html).  
 For all others, the most easiest way would be to fire up your Terminal Emulator or Command Line(cmd) for Windows users and change directory (eg:- cd S3CsSgpa) into the one of the directories in my repo.  
 Then compile into the same directory (which the "." represents) by :
