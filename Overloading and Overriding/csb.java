@@ -1,5 +1,5 @@
 /*
- * @name        Reverse a String
+ * @name        Basics of Interfaces
  * @package     CHARSEQ
  * @file        csb.java
  * @author      Yedhin Kizhakkethara
@@ -19,7 +19,6 @@ import java.lang.*;
 // our interface
 interface classHour{
 	String revName(String value);
-		
 }
 
 // implement me master...
@@ -28,6 +27,7 @@ public class csb implements classHour{
 		char[] charArr = value.toCharArray();
 		char temp;
 		int i = value.length()-1,j=0;
+		// Method to reverse
 		while(j < (value.length()/2) ){
 			temp = charArr[i];
 			charArr[i] =  charArr[j];
