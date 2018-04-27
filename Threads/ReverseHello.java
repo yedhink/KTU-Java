@@ -1,3 +1,14 @@
+/*
+ * @name        Reverse and Print 
+ * @package     multithreadingexamples
+ * @file        ReverseHello.java
+ * @author      Yedhin Kizhakkethara
+ * @email       yedhin1998@gmail.com
+ * @link        https://github.com/yedhink/KTU-Java
+ * @copyright   Copyright (c) 2018 ikigai, All Rights Reserved.
+ * @license     MIT
+ * @create      23-04-2018
+ */
 package multithreadingexamples;
 import java.util.*;
 class thread extends Thread {
