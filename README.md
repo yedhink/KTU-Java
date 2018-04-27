@@ -138,6 +138,9 @@ What if it's part of a Package? No problemo. After compiling , Run :
 # Overviews
 ![](https://github.com/yedhink/KTU-Java/blob/master/.gif/EasyKtuMath.gif "Run the Main class only")
 
+### Your SGPAs a click away...
+![](https://github.com/yedhink/KTU-Java/blob/master/.gif/S3CsSgpa.gif "CheckSgpa")
+
 # Contribute
 Have you been looking for open source repositories to contribute? Look no further! You have come to the right place. Try and complete the TODO list. Let's work together. :)
 
