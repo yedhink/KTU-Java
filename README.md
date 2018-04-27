@@ -68,11 +68,11 @@ In the programs that i've done , i have covered and most importantly used concep
 	└──── What's super() and what is "this"? You will see
 	└──── Basics of jump statements
 	└──── Basics of Packages
+	└──── File Handling basics
 
 5) S3CsSgpa      
 	└──── Well? Want to apply what you've learnt? This is your opportunity. 
 	└──── Creates a simple GUI to find your SGPA
-	└──── File Handling basics
 	└──── Sorting 
 	└──── Data Structures 
 	└──── Provides a great idea on javax.swing(the 'x' matters :p) 
@@ -81,7 +81,8 @@ In the programs that i've done , i have covered and most importantly used concep
 
 # What's next?
 Now what you waiting for? Compile the `*.java` files and run it.
-The most easiest way would be to change directory into the one which you want. Then do :
+The most easiest way would be to fire up your Terminal Emulator or Command Line(cmd) for Windows users and change directory into the one which you want.  
+Then compile into the same directory , which the "." represents by :
 
 > `javac -d . *.java`
 
