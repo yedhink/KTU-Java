@@ -48,6 +48,7 @@ class gui extends Frame {
 			jcb.addItem(key);
 			map.put(key, value);
 		}
+		map = (HashMap<String,String>)sortByComparator((Map<String,String>)map,false);
 		fileR.close();
 		fileS.close();
 	}
@@ -55,7 +56,6 @@ class gui extends Frame {
 		// explictely setting layout. default is Flow itself
 		setLayout(new FlowLayout());
 		jcb.setEditable(true);
-		map = (HashMap<String,String>)sortByComparator((Map<String,String>)map,false);
 		add(jcb);
 		buttonFind = new JButton("Find Sgpa");
 		add(buttonFind);
@@ -70,7 +70,6 @@ class gui extends Frame {
 	private class theHandler implements ActionListener {
 		public void actionPerformed(ActionEvent event) {	
 			String selectedRegNum = (String) jcb.getSelectedItem();
-			new UIManager();
 			if(event.getSource() == buttonFind){
 				value = map.get(selectedRegNum);
 				if (value!=null) {
@@ -78,16 +77,23 @@ class gui extends Frame {
 						JOptionPane.showMessageDialog(null,"\tCongrats!You're the topper\nYour sgpa : "+value);
 					}
 					else{
-						//JOptionPane.showMessageDialog(null,"Your sgpa : "+value);
+						JOptionPane.showMessageDialog(null,"Your sgpa : "+value);
+						/* Uncomment and try this out if you want to play with colors :D
+						new UIManager();
 						UIManager.put("OptionPane.background", Color.decode("#d3d3d3"));
 						UIManager.put("Panel.background", Color.decode("#d3d3d3"));
 						JOptionPane.showMessageDialog(null, "Your sgpa : "+value, "Gray", JOptionPane.INFORMATION_MESSAGE);
+						*/
 					}
 				} 
 				else {
+					JOptionPane.showMessageDialog(null,"No such register number in S3 CS");
+					/*
+					new UIManager();
 					UIManager.put("OptionPane.background", Color.decode("#FF0000"));
 					UIManager.put("Panel.background", Color.decode("#FF0000"));
 					JOptionPane.showMessageDialog(null, "No such register number in S3 CS", "Red", JOptionPane.INFORMATION_MESSAGE);
+					*/
 				}
 			}
 			if(event.getSource() == buttonTopTen){
@@ -146,7 +152,8 @@ public class CheckSgpa {
 		t.join();
 		gui frame = new gui();
 		frame.setSize(600,600);
-		frame.setBackground(Color.decode("#000"));
+		// Uncomment to play around with colors
+		//frame.setBackground(Color.decode("#000"));
 		frame.setVisible(true);
 	}
 }
