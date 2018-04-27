@@ -1,3 +1,6 @@
+# Acknowledgement
+I would like to start by thanking my teacher Ms.Divya John for giving me the best introduction to the Java world.
+
 # Introduction
 This repo consists of my work on Java and the simple programs which i had done inorder to learn Java.  
 To be specific my aim was to familiarize with the APJ Abdul Kalam Technological University's (initially Kerala Technological University(KTU)) [syllabus](https://drive.google.com/file/d/0B9ojglPaasIEUUFuSVRXbDlZTEk/view) for Java.  
@@ -27,7 +30,7 @@ In the programs that i've done , i have covered and most importantly used concep
 
 1)[Classes and Objects](https://www.tutorialspoint.com/java/java_object_classes.htm),
 2)[Operators and their Precedence](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html),
-3)[Pacakges](https://www.tutorialspoint.com/java/java_packages.htm),
+3)[Packages](https://www.tutorialspoint.com/java/java_packages.htm),
 4)[Method Overiding and Overloading](https://www.programcreek.com/2009/02/overriding-and-overloading-in-java-with-examples/), 
 5)[Static Instances](https://www.javatpoint.com/static-keyword-in-java), 
 6)[Threads](https://www.javaworld.com/article/2077138/java-concurrency/introduction-to-java-threads.html), 
@@ -84,7 +87,7 @@ In the programs that i've done , i have covered and most importantly used concep
 
 # What's next?
 Now what you waiting for? Compile the all the `*.java` files and run it.
-The most easiest way would be to fire up your Terminal Emulator or Command Line(cmd) for Windows users and change directory into the one which you want.  
+The most easiest way would be to fire up your Terminal Emulator or Command Line(cmd) for Windows users and change directory into the one of the directories in my repo.  
 Then compile into the same directory (which the "." represents) by :
 
 > `javac -d . *.java`
@@ -96,6 +99,16 @@ After creating the compiled .class file, just run it using (avoid the .class ext
 What if it's part of a Package? No problemo. After compiling , Run :
 
 > `java nameOfPackage.filename`
+
+# Contribute
+Have you been looking for open source repositories to contribute? Look no further! You have come to the right place. Try and complete the TODO list part of each program.
+
+# Contact
+Having issues in the program? Open up an issue in the issues counter, so that i could know about it.
+Feel free to contact me via [Linkedin](linkedin.com/in/yedhin1998) to clear your doubts.
+
+# Credits
+Without [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) this project wouldn't have become a reality. Thanks to Bram Moolenaar. [Oracle Java Documentaion](http://www.oracle.com/technetwork/java/javase/overview/index.html) , [tutorialspoint](https://www.tutorialspoint.com/index.htm) were also great references. Last but not the least , i would like to mention [Arch Linux](https://www.distrowatch.com/table.php?distribution=arch) for providing me with such a smooth sailing workflow `->` "makepkg! Not war".
 
 ## License  
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/yedhink/KTU-Java/blob/master/LICENSE) file for details
