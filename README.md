@@ -38,7 +38,9 @@ I would like to start by thanking my teacher Ms.Divya John for giving me the bes
 
 # Introduction
 This repo consists of my work on Java and the simple programs which i had done inorder to learn Java.  
+
 To be specific my aim was to familiarize with the APJ Abdul Kalam Technological University's (initially Kerala Technological University(KTU)) [syllabus](https://drive.google.com/file/d/0B9ojglPaasIEUUFuSVRXbDlZTEk/view) for Java.  
+
 Created this repository with the aim of helping out my friends and others to understand the basics of Java and to understand its scope by doing some programs. 
 
 # Requirements
@@ -56,28 +58,30 @@ Assuming that you've already installed the above requirements and it is in a wor
    [Set up git](https://help.github.com/articles/set-up-git/) in your local machine  
    From the Clone with HTTPs section, copy the clone URL for the repository.  
    Then from command line create a clone in your local machine by:-  
-   > `git clone url`  
+   ```bash
+   git clone url
+   ```
    ###### For Other Users :-
    Follow this [documentation](https://help.github.com/articles/cloning-a-repository/)
 
 # Content
-In the programs that i've done , i have covered and most importantly used concepts such as :
+In the programs that I've done, I have covered and most importantly used concepts such as:
 
-1)[Classes and Objects](https://www.tutorialspoint.com/java/java_object_classes.htm),
-2)[Operators and their Precedence](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html),
-3)[Packages](https://www.tutorialspoint.com/java/java_packages.htm),
-4)[Method Overiding and Overloading](https://www.programcreek.com/2009/02/overriding-and-overloading-in-java-with-examples/), 
-5)[Static Instances](https://www.javatpoint.com/static-keyword-in-java), 
-6)[Threads](https://www.javaworld.com/article/2077138/java-concurrency/introduction-to-java-threads.html), 
-7)[String](https://www.tutorialspoint.com/java/java_strings.htm), 
-8)[Streams and IO](https://docs.oracle.com/javase/1.5.0/docs/api/java/io/package-summary.html), 
-9)[Exception Handling](https://docs.oracle.com/javase/tutorial/essential/exceptions/), 
-10)[AWT](https://www.javatpoint.com/java-awt), 
-11)[Swing](http://zetcode.com/tutorials/javaswingtutorial/), 
-12)[File Handling](http://www.dailyfreecode.com/code/file-handling-java-3430.aspx), 
-13)[Event Hadnling](https://docs.oracle.com/javase/tutorial/uiswing/events/index.html), 
-14)[Data Structures](http://java.wikia.com/wiki/Data_Structures),
-15)[Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html).
+1. [Classes and Objects](https://www.tutorialspoint.com/java/java_object_classes.htm)
+1. [Operators and their Precedence](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html)
+1. [Packages](https://www.tutorialspoint.com/java/java_packages.htm)
+1. [Method Overiding and Overloading](https://www.programcreek.com/2009/02/overriding-and-overloading-in-java-with-examples/) 
+1. [Static Instances](https://www.javatpoint.com/static-keyword-in-java) 
+1. [Threads](https://www.javaworld.com/article/2077138/java-concurrency/introduction-to-java-threads.html) 
+1. [String](https://www.tutorialspoint.com/java/java_strings.htm) 
+1. [Streams and IO](https://docs.oracle.com/javase/1.5.0/docs/api/java/io/package-summary.html) 
+1. [Exception Handling](https://docs.oracle.com/javase/tutorial/essential/exceptions/) 
+1. [AWT](https://www.javatpoint.com/java-awt) 
+1. [Swing](http://zetcode.com/tutorials/javaswingtutorial/) 
+1. [File Handling](http://www.dailyfreecode.com/code/file-handling-java-3430.aspx) 
+1. [Event Hadnling](https://docs.oracle.com/javase/tutorial/uiswing/events/index.html) 
+1. [Data Structures](http://java.wikia.com/wiki/Data_Structures)
+1. [Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 
 ## A bit about what each directory in my repo has to offer
 
@@ -122,19 +126,28 @@ In the programs that i've done , i have covered and most importantly used concep
 
 # What's next?
 Now what you waiting for? Compile all the `*.java` files and run it.  
+
 If you're using an IDE like Intellij then i suggest you follow this [documentation](https://www.jetbrains.com/help/idea/2017.1/creating-running-and-packaging-your-first-java-application.html).  
+
 For all others, the most easiest way would be to fire up your Terminal Emulator or Command Line(cmd) for Windows users and change directory (eg:- cd S3CsSgpa) into the one of the directories in my repo.  
-Then compile into the same directory (which the "." represents) by :
 
-> `javac -d . *.java`
+Then compile into the same directory (which the "." represents) by:
 
-After creating the compiled .class file, just run it using (avoid the .class extension) :
+```bash
+javac -d . *.java
+```
 
-> `java classWhichConsistsOfMainMethod`
+After creating the compiled .class file, just run it using (avoid the .class extension):
 
-What if it's part of a Package? No problemo. After compiling , Run :
+```bash
+java classWhichConsistsOfMainMethod
+```
 
-> `java nameOfPackage.filename`
+What if it's part of a Package? No problemo. After compiling, run:
+
+```bash
+java nameOfPackage.filename
+```
 
 # Overviews
 ![](https://github.com/yedhink/KTU-Java/blob/master/.gif/EasyKtuMath.gif "Run the Main class only")
@@ -155,11 +168,12 @@ Have you been looking for open source repositories to contribute? Look no furthe
 - [ ] Standalone examples for Operators and their Precedence
 
 # Contact
-Having issues in the program? Open up an issue in the issues counter, so that i could know about it.
-Feel free to contact me via [Linkedin](https://www.linkedin.com/in/yedhin1998/) to clear your doubts.
+Having issues in the program? Open up an issue in the issues counter, so that I could know about it.
+
+Feel free to contact me via [Linkedin](https://www.linkedin.com/in/yedhin1998/) if you have any questions.
 
 # Credits
-Without [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) and [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) this project wouldn't have become a reality. Well thanks to Bram Moolenaar. [Oracle Java Documentaion](http://www.oracle.com/technetwork/java/javase/overview/index.html) , [tutorialspoint](https://www.tutorialspoint.com/index.htm) were also great references. Last but not the least , i would like to mention [Arch Linux](https://www.distrowatch.com/table.php?distribution=arch) for providing me with such a smooth sailing workflow `->` "makepkg! Not war".
+Without [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) and [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) this project wouldn't have become a reality. Well thanks to Bram Moolenaar. [Oracle Java Documentation](http://www.oracle.com/technetwork/java/javase/overview/index.html), [tutorialspoint](https://www.tutorialspoint.com/index.htm) were also great references. Last but not the least , I would like to mention [Arch Linux](https://www.distrowatch.com/table.php?distribution=arch) for providing me with such a smooth sailing workflow `->` "makepkg! Not war".
 
 ## License  
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/yedhink/KTU-Java/blob/master/LICENSE) file for details
