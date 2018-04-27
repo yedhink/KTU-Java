@@ -1,6 +1,6 @@
 # Introduction
-This repo consists of my work on Java and the simple programs which i had done inorder to learn Java.
-To be specific my aim was to familiarize with the APJ Abdul Kalam Technological University's (initially Kerala Technological University(KTU)) [syllabus](https://drive.google.com/file/d/0B9ojglPaasIEUUFuSVRXbDlZTEk/view) for Java.
+This repo consists of my work on Java and the simple programs which i had done inorder to learn Java.  
+To be specific my aim was to familiarize with the APJ Abdul Kalam Technological University's (initially Kerala Technological University(KTU)) [syllabus](https://drive.google.com/file/d/0B9ojglPaasIEUUFuSVRXbDlZTEk/view) for Java.  
 Created this repository with the aim of helping out my friends and others to understand the basics of Java and to understand its scope by doing some programs. 
 
 # Requirements
@@ -80,9 +80,9 @@ In the programs that i've done , i have covered and most importantly used concep
 ```      
 
 # What's next?
-Now what you waiting for? Compile the `*.java` files and run it.
+Now what you waiting for? Compile the all the `*.java` files and run it.
 The most easiest way would be to fire up your Terminal Emulator or Command Line(cmd) for Windows users and change directory into the one which you want.  
-Then compile into the same directory , which the "." represents by :
+Then compile into the same directory (which the "." represents) by :
 
 > `javac -d . *.java`
 
