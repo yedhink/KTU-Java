@@ -1,3 +1,15 @@
+/*
+ * @name        Check Sgpa
+ * @package     GUIProjects
+ * @file        CheckSgpa.java
+ * @author      Yedhin Kizhakkethara
+ * @email       yedhin1998@gmail.com
+ * @link        https://github.com/yedhink/KTU-Java
+ * @copyright   Copyright @ ikigai, All Rights Reserved.
+ * @license     MIT
+ * @create      23-04-2018
+ */
+
 package GUIProjects;
 import javax.swing.JOptionPane;
 import javax.swing.JLabel;
