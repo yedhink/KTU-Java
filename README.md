@@ -49,7 +49,7 @@ Created this repository with the aim of helping out my friends and others to und
    or the classic and powerful command line editor [Vim](https://www.vim.org/download.php) which i use. `¯\_(ツ)_/¯`
 
 # How to use my repositiory? 
-Assuming that you've already installed the requirements and it is in a working condition. Then:-    
+Assuming that you've already installed the [requirements](#Requirements) and it is in a working condition. Then:-    
 1) Fork the repository(optional)
 2) Clone/Download the files into your local machine  
    ###### For Linux Users :-  
