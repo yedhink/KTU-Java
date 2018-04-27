@@ -6,7 +6,8 @@ Created this repository with the aim of helping out my friends and others to und
 # Requirements
 1) Java (Obviously) --> [Install Java](https://java.com/en/download/help/download_options.xml)
 2) Java SE Development Kit(JDK) --> [Install JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
-3) For coding make use of IDEs like [IntelliJ](https://www.jetbrains.com/idea/download/index.html#section=linux) or Text Editors like [Sublime Text](https://www.sublimetext.com/3)
+3) For coding make use of IDEs like [IntelliJ](https://www.jetbrains.com/idea/download/index.html#section=linux)  
+   or Text Editors like [Sublime Text](https://www.sublimetext.com/3)  
    or the classic and powerful command line editor [vim](https://www.vim.org/download.php) which i use. `¯\_(ツ)_/¯`
 
 # How to use my repositiory? 
