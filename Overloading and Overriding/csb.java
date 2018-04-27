@@ -13,8 +13,8 @@ package CHARSEQ;
 import java.util.Scanner;
 import java.lang.*;
 
-// why the name csb.java though? Cause i created this program long back when i kinda found it funny to read the reversed names of my
-// classmates, who were in the csb. We used to say these names out loud during classHour. weird me eh? \(o-o)/
+// why the name csb.java though? Cause i created this program long back when i kinda found it funny to read the reversed names 
+// of my classmates, who were in the csb. We used to say these names out loud during classHour. weird me eh? \(o-o)/
 
 // our interface
 interface classHour{
