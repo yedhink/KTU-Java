@@ -108,7 +108,7 @@ Have you been looking for open source repositories to contribute? Look no furthe
 
 # Contact
 Having issues in the program? Open up an issue in the issues counter, so that i could know about it.
-Feel free to contact me via [Linkedin](linkedin.com/in/yedhin1998) to clear your doubts.
+Feel free to contact me via [Linkedin](https://www.linkedin.com/in/yedhin1998/) to clear your doubts.
 
 # Credits
 Without [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) and [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) this project wouldn't have become a reality. Well thanks to Bram Moolenaar. [Oracle Java Documentaion](http://www.oracle.com/technetwork/java/javase/overview/index.html) , [tutorialspoint](https://www.tutorialspoint.com/index.htm) were also great references. Last but not the least , i would like to mention [Arch Linux](https://www.distrowatch.com/table.php?distribution=arch) for providing me with such a smooth sailing workflow `->` "makepkg! Not war".
