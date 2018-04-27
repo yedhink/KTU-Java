@@ -104,7 +104,17 @@ What if it's part of a Package? No problemo. After compiling , Run :
 ![](https://github.com/yedhink/KTU-Java/blob/master/.gif/EasyKtuMath.gif "Run the Main class only")
 
 # Contribute
-Have you been looking for open source repositories to contribute? Look no further! You have come to the right place. Try and complete the TODO list part of each program.
+Have you been looking for open source repositories to contribute? Look no further! You have come to the right place. Try and complete the TODO list. Let's work together. :)
+
+## TODO list
+
+- [ ] Java Database Connectivity(JDBC) -> Basics and Implementaion
+- [ ] Make the Graphical User Interfaces look better
+- [ ] Applets -> Undone since it's deprecated from JDK 9
+- [ ] Basics and exmaples of abstract keyword
+- [ ] 2-D array and examples
+- [ ] Standalone examples for Operators and their Precedence
+- [ ] Type promotion , parsing ,type casting etc
 
 # Contact
 Having issues in the program? Open up an issue in the issues counter, so that i could know about it.
