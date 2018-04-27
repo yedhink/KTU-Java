@@ -1,5 +1,5 @@
 /*
- * @name        Mthod Overriding 
+ * @name        Method Overriding 
  * @package     classExamples.overR.DMD
  * @file        overriding.java
  * @author      Yedhin Kizhakkethara
