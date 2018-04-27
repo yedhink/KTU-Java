@@ -1,3 +1,14 @@
+/*
+ * @name        Find maximum value in an array of int 
+ * @package     multithreadingexamples
+ * @file        MaxValue.java
+ * @author      Yedhin Kizhakkethara
+ * @email       yedhin1998@gmail.com
+ * @link        https://github.com/yedhink/KTU-Java
+ * @copyright   Copyright (c) 2018 ikigai, All Rights Reserved.
+ * @license     MIT
+ * @create      23-04-2018
+ */
 // Find the max value in an array of ints using 4 threads
 package multithreadingexamples;
 import java.util.*;
