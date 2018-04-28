@@ -77,7 +77,7 @@ In the programs that I've done, I have covered and most importantly used concept
 1. [AWT](https://www.javatpoint.com/java-awt) 
 1. [Swing](http://zetcode.com/tutorials/javaswingtutorial/) 
 1. [File Handling](http://www.dailyfreecode.com/code/file-handling-java-3430.aspx) 
-1. [Event Hadnling](https://docs.oracle.com/javase/tutorial/uiswing/events/index.html) 
+1. [Event Handling](https://docs.oracle.com/javase/tutorial/uiswing/events/index.html) 
 1. [Data Structures](http://java.wikia.com/wiki/Data_Structures)
 1. [Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 
