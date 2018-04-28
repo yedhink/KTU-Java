@@ -44,16 +44,15 @@ To be specific my aim was to familiarize with the APJ Abdul Kalam Technological 
 Created this repository with the aim of helping out my friends and others to understand the basics of Java and to understand its scope by doing some programs. 
 
 # Requirements
-1) Java (Obviously) --> [Install Java](https://java.com/en/download/help/download_options.xml)
-2) Java SE Development Kit(JDK) --> [Install JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
-3) For coding make use of IDEs like [IntelliJ](https://www.jetbrains.com/idea/download/index.html#section=linux)  
+1. Java SE Development Kit(JDK) --> [Install JDK](https://www.codenotfound.com/java-download-install-jdk-8-windows.html)
+1. For coding make use of IDEs like [IntelliJ](https://www.jetbrains.com/idea/download/index.html#section=linux)  
    or Text Editors like [Sublime Text](https://www.sublimetext.com/3)  
    or the classic and powerful command line editor [Vim](https://www.vim.org/download.php) which i use. `¯\_(ツ)_/¯`
 
 # How to use my repositiory? 
 Assuming that you've already installed the above requirements and it is in a working condition. Then:-    
-1) Fork the repository(optional)
-2) Clone/Download the files into your local machine  
+1. Fork the repository(optional)
+1. Clone/Download the files into your local machine  
    ###### For Linux Users :-  
    [Set up git](https://help.github.com/articles/set-up-git/) in your local machine  
    From the Clone with HTTPs section, copy the clone URL for the repository.  
