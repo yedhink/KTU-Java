@@ -55,10 +55,9 @@ Assuming that you've already installed the above requirements and it is in a wor
 1. Clone/Download the files into your local machine  
    ###### For Linux Users :-  
    [Set up git](https://help.github.com/articles/set-up-git/) in your local machine  
-   From the Clone with HTTPs section, copy the clone URL for the repository.  
    Then from command line create a clone in your local machine by:-  
    ```bash
-   git clone url
+   git clone https://github.com/yedhink/KTU-Java.git
    ```
    ###### For Other Users :-
    Follow this [documentation](https://help.github.com/articles/cloning-a-repository/)
