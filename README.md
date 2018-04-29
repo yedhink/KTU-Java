@@ -120,6 +120,15 @@ In the programs that I've done, I have covered and most importantly used concept
 	└──── Data Structures 
 	└──── Provides a great idea on javax.swing(the 'x' matters :p) 
 	└──── Love designing? Play with java.awt.Color
+
+6) Operators      
+	└──── Assignment  
+	└──── Arithmetic
+	└──── Unary
+	└──── Relational
+	└──── TypeComparison 
+	└──── Bitwise 
+	└──── Conditional 
 ```      
 
 # What's next?
@@ -163,7 +172,7 @@ Have you been looking for open source repositories to contribute? Look no furthe
 - [ ] Applets -> Undone since it's deprecated from JDK 9
 - [ ] Basics and exmaples of abstract keyword
 - [ ] 2-D array and examples
-- [ ] Standalone examples for Operators and their Precedence
+- [x] Standalone examples for Operators and their Precedence
 
 # Contact
 Having issues in the program? Open up an issue in the issues counter, so that I could know about it.
