@@ -123,6 +123,7 @@ In the programs that I've done, I have covered and most importantly used concept
 	└──── Love designing? Play with java.awt.Color
 
 6) Operators      
+	└──── Must needed basics. Dont miss this one.  
 	└──── Assignment  
 	└──── Arithmetic
 	└──── Unary
@@ -132,6 +133,7 @@ In the programs that I've done, I have covered and most importantly used concept
 	└──── Conditional 
 
 7) 2darray      
+	└──── Learn inputting into a 2d Array 
 	└──── Addition of Matrices 
 ```      
 
