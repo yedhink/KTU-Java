@@ -9,7 +9,7 @@
  * @license     MIT
  * @create      23-04-2018
  */
-package GUIProjects;
+package gui;
 import java.awt.TextField;
 import java.awt.*;
 import java.awt.Frame;
