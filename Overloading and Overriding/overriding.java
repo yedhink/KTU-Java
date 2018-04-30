@@ -9,8 +9,8 @@
  * @license     MIT
  * @create      23-04-2018
  */
-package classExamples.overR.DMD;
-import CHARSEQ.*; // well, well..look what we have imported here.
+package classexamples.overriding;
+import charseq.*; // well, well..look what we have imported here.
 
 class A{
 	void show(){
