@@ -9,7 +9,7 @@
  * @license     MIT
  * @create      23-04-2018
  */
-package multithreadingexamples;
+package threads.examples;
 public class SharedCounter {
 	public static int count = 0;
 	public static synchronized void incrementCount(){

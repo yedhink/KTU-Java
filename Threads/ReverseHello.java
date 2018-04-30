@@ -9,7 +9,7 @@
  * @license     MIT
  * @create      23-04-2018
  */
-package multithreadingexamples;
+package threads.examples;
 import java.util.*;
 class thread extends Thread {
 	String hello = "";

@@ -10,7 +10,7 @@
  * @create      23-04-2018
  */
 // Find the max value in an array of ints using 4 threads
-package multithreadingexamples;
+package threads.examples;
 import java.util.*;
 class Largest extends Thread {
 	int[] arr;

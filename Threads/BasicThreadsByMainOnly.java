@@ -1,4 +1,4 @@
-package classExamples;
+package threads;
 public class BasicThreadsByMainOnly {
 	public static void main(String[] args) {
 		Thread obj1 = new Thread (new Runnable(){

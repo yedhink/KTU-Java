@@ -1,4 +1,4 @@
-package classExamples;
+package threads;
 public class BasicThreadsBySync {
 	
 	// Initializing count as zero
