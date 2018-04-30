@@ -1,4 +1,4 @@
-package MATH.modulesix;
+package math.modulesix;
 import java.lang.*;
 // Format:-
 // expression = term | expression `+` term | expression `-` term
