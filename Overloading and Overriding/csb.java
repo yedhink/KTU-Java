@@ -9,7 +9,7 @@
  * @license     MIT
  * @create      23-04-2018
  */
-package CHARSEQ;
+package charseq;
 import java.util.Scanner;
 import java.lang.*;
 
