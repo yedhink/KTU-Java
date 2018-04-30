@@ -9,8 +9,8 @@
  * @license     MIT
  * @create      23-04-2018
  */
-package MATH.modulesix;
-import MATH.modulesix.RecursiveParser;
+package math.modulesix;
+import  math.modulesix.RecursiveParser;
 import java.lang.*;
 import java.io.*;
 import java.util.*;
