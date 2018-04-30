@@ -135,6 +135,7 @@ In the programs that I've done, I have covered and most importantly used concept
 7) 2darray      
 	└──── Learn inputting into a 2d Array 
 	└──── Addition of Matrices 
+	└──── Multiplication of Matrices 
 ```      
 
 # What's next?
@@ -177,7 +178,7 @@ Have you been looking for open source repositories to contribute? Look no furthe
 - [ ] Make the Graphical User Interfaces look better
 - [ ] Applets -> Undone since it's deprecated from JDK 9
 - [ ] Basics and exmaples of abstract keyword
-- [ ] 2-D array and examples
+- [x] 2-D array and examples
 - [x] Standalone examples for Operators and their Precedence
 
 # Contact
