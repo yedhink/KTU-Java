@@ -10,7 +10,7 @@
  * @create      23-04-2018
  */
 
-package GUIProjects;
+package guiprojects;
 import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
