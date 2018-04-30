@@ -1,5 +1,5 @@
-package MATH.modulesix;
-import MATH.modulesix.NumericIntegration;
+package math.modulesix;
+import math.modulesix.NumericIntegration;
 import java.io.*;
 import java.lang.*;
 public class Main {
