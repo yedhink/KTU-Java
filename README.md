@@ -170,7 +170,9 @@ java nameOfPackage.filename
 ![](https://github.com/yedhink/KTU-Java/blob/master/.gif/S3CsSgpa.gif "CheckSgpa")
 
 # Contribute
-Have you been looking for open source repositories to contribute? Look no further! You have come to the right place. Try and complete the TODO list. Let's work together. :)
+Have you been looking for open source repositories to contribute? Look no further! You have come to the right place. 
+It's important to stick on to the [Contribution guidelines](https://github.com/yedhink/KTU-Java/blob/master/CONTRIBUTING.md) while contributing.
+Try and complete the TODO list. Let's work together :)
 
 ## TODO list
 
