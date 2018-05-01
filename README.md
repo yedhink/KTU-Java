@@ -33,8 +33,6 @@
                                                                                                                                                                                        
 # Made with ❤ by yours truly 
 
-[![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg?style=for-the-badge)](https://github.com/yedhink/KTU-Java)
-
 # Acknowledgement
 I would like to start by thanking my teacher Ms.Divya John for giving me the best introduction to the Java world.
 
