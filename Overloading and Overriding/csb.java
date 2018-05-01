@@ -9,7 +9,7 @@
  * @license     MIT
  * @create      23-04-2018
  */
-package charseq;
+package classexamples;
 import java.util.Scanner;
 import java.lang.*;
 
@@ -22,7 +22,7 @@ interface classHour{
 }
 
 // implement me master...
-public class csb implements classHour{
+class charset implements classHour{
 	public String revName(String value){
 		char[] charArr = value.toCharArray();
 		char temp;
@@ -40,10 +40,14 @@ public class csb implements classHour{
 	}
 }
 
-class charset{
+public class csb{
+	public static String getReversed(String value){
+		charset getRev = new charset();
+		return getRev.revName(value);
+	}
 	public static void main(String args[]){
 		Scanner input = new Scanner(System.in);
-		csb stud = new csb();
+		charset stud = new charset();
 		System.out.print("Enter Name :");
 		System.out.println("Reversed name is "+stud.revName(input.next()));
 		input.close();
