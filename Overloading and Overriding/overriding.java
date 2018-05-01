@@ -9,8 +9,8 @@
  * @license     MIT
  * @create      23-04-2018
  */
-package classexamples.overriding;
-import charseq.*; // well, well..look what we have imported here.
+package classexamples;
+import classexamples.*; // well, well..look what we have imported here.
 
 class A{
 	void show(){
@@ -39,8 +39,7 @@ class overriding{
 		objA.show();
 		objB.show();
 		objC.show();
-		csb stud = new csb();
-		System.out.println("\nYay! We called the function revName() from another program\nReversed name : "+stud.revName("Yedhin")+"\n");
+		System.out.println("\nYay! We called the function revName() from another program\nReversed name : "+csb.getReversed("Yedhin")+"\n");
 		
 		// Dynamic Method Dispatch 
 		System.out.println("Dynamic method dispatch works");
