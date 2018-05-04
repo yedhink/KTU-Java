@@ -16,7 +16,7 @@ public class sum_2nos extends Applet implements ActionListener
 
 	public void init()
 	{
-//		t1.setForeground(Color = Red);
+		//t1.setForeground(Color = Red);
 		add(l1);
 		add(t1);
 		add(l2);
