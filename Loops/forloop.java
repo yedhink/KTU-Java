@@ -1,5 +1,6 @@
 /* Multiplication Table*/
 
+package loops;
 import java.io.*;
 import java.util.*;
 import java.text.*;
