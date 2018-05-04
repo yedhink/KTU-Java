@@ -75,6 +75,7 @@ In the programs that I've done, I have covered and most importantly used concept
 1. [Streams and IO](https://docs.oracle.com/javase/1.5.0/docs/api/java/io/package-summary.html) 
 1. [Exception Handling](https://docs.oracle.com/javase/tutorial/essential/exceptions/) 
 1. [AWT](https://www.javatpoint.com/java-awt) 
+1. [Applet](https://docs.oracle.com/javase/tutorial/deployment/applet/) 
 1. [Swing](http://zetcode.com/tutorials/javaswingtutorial/) 
 1. [File Handling](http://www.dailyfreecode.com/code/file-handling-java-3430.aspx) 
 1. [Event Handling](https://docs.oracle.com/javase/tutorial/uiswing/events/index.html) 
@@ -101,8 +102,9 @@ In the programs that I've done, I have covered and most importantly used concept
 
 3) EventHandling
 	└──── Creates a simple login Graphical User Interface(GUI)
-	└──── Covers basics of java.awt and some of Swing
-	└──── Learn basics of Listeners 
+	└──── Creates an Applet program to add 2 numbers 
+	└──── Covers basics of java.awt,java.applet and some of Swing
+	└──── Learn basics of Listeners and Events
 	└──── Basics from this required in upcoming programs
 
 4) Overloading and Overriding
@@ -136,6 +138,11 @@ In the programs that I've done, I have covered and most importantly used concept
 	└──── Learn inputting into a 2d Array 
 	└──── Addition of Matrices 
 	└──── Multiplication of Matrices 
+
+8) Loops      
+	└──── The name itself suggests what this offers :p 
+	└──── For loops
+	└──── if-else-if statements 
 ```      
 
 # What's next?
@@ -178,7 +185,7 @@ Try and complete the TODO list. Let's work together :)
 
 - [ ] Java Database Connectivity(JDBC) -> Basics and Implementaion
 - [ ] Make the Graphical User Interfaces look better
-- [ ] Applets -> Undone since it's deprecated from JDK 9
+- [x] Applets -> Undone since it's deprecated from JDK 9
 - [ ] Basics and exmaples of abstract keyword
 - [x] 2-D array and examples
 - [x] Standalone examples for Operators and their Precedence
@@ -193,3 +200,6 @@ Without [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) and [Bash](https:
 
 ## License  
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/yedhink/KTU-Java/blob/master/LICENSE) file for details
+
+## Spread the word
+Liked the project? Just give it a star :star: and spread the word!
