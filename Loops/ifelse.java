@@ -3,17 +3,14 @@
  */
 
 package loops;
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class ifelse {
 
 	public static void main(String[] args) {
 
 		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter an integer value, n = ");
 		int n=sc.nextInt();
 		String ans="";
 		if(n%2==1){
@@ -23,16 +20,19 @@ public class ifelse {
 			if(n>20){
 				ans = "Not Weird";
 			}
-			if(n>=2&&n<5){
+			else if(n>=2&&n<5){
 				ans = "Not Weird";
 			}
 
-			if(n>=6&&n<=20){
+			else if(n>=6&&n<=20){
 				ans = "Weird";
+			}
+			else if(n==0){
+				ans = "Such Weird. Much Wow";
 			}
 		}
 		System.out.println(ans);
-
+		sc.close(); 
 	}
 }
 
