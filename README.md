@@ -124,8 +124,11 @@ In the programs that I've done, I have covered and most importantly used concept
 	└──── Provides a great idea on javax.swing(the 'x' matters :p) 
 	└──── Love designing? Play with java.awt.Color
 
-6) Operators      
+6) Data Types And Operators     
 	└──── Must needed basics. Dont miss this one.  
+	└──── Different Data Types  
+	└──── Type Casting  
+	└──── Parsing Data Types  
 	└──── Assignment  
 	└──── Arithmetic
 	└──── Unary
