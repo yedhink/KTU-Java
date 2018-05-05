@@ -146,6 +146,10 @@ In the programs that I've done, I have covered and most importantly used concept
 	└──── The name itself suggests what this offers :p 
 	└──── For loops
 	└──── if-else-if statements 
+
+9) Abstract Keyword      
+	└──── What is the "abstract" keyword? 
+	└──── An example to explain in detail.
 ```      
 
 # What's next?
@@ -189,7 +193,7 @@ Try and complete the TODO list. Let's work together :)
 - [ ] Java Database Connectivity(JDBC) -> Basics and Implementaion
 - [ ] Make the Graphical User Interfaces look better
 - [x] Applets -> Undone since it's deprecated from JDK 9
-- [ ] Basics and exmaples of abstract keyword
+- [x] Basics and exmaples of abstract keyword
 - [x] 2-D array and examples
 - [x] Standalone examples for Operators and their Precedence
 
