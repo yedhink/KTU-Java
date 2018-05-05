@@ -9,7 +9,9 @@ First off, thanks for taking the time to contribute!
 *   The aim of the repository is mainly to help out newcomers to Java programming. Kindly keep that in
     mind and add necessary comments in your source code.
 
-*   Make the program user friendly. The user shouln't be left with doubts while running a program. 
+*   Make the program user friendly. The user shouln't be left with doubts while running a program.
+    For example : While requiring an user input , add a print statement along with it describing what
+    the user should input.
 
 *   Include your program within the appropriate package. For example all GUI's are included within 
     "guiprojects" package. 
