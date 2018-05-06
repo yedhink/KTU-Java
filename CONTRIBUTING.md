@@ -36,8 +36,6 @@ There are various channels, on which you can ask questions:
 
 *   PM in Linkedin  : https://www.linkedin.com/in/yedhin1998
 
-*   Contact me via WhatsApp (intended for close friends)
-
 ## Code Style
 
 Refer to this [Code Convetion](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html) while writing your source files.
