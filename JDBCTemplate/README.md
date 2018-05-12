@@ -18,4 +18,4 @@ Do this if you want to learn working with MySql. Else make use of the already cr
 ## Usage
 
 Its important to note that , when , say you're in Arch Linux, then your default vendor is mariadb , thus in the program you would have to replace "mysql" with "mariadb".
-Rest of the execution as same as what had been done with other programs , compile and run.
+Rest of the execution as same as what had been done with other programs , compile and run `JdbcBeg.java`
