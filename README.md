@@ -150,6 +150,12 @@ In the programs that I've done, I have covered and most importantly used concept
 9) Abstract Keyword      
 	└──── What is the "abstract" keyword? 
 	└──── An example to explain in detail.
+
+10) JDBCTemplate      
+	└──── Java Database Connectivity 
+	└──── Basics of mysql 
+	└──── Basics of JDBC 
+	└──── Reading and writing from DB 
 ```      
 
 # What's next?
@@ -190,7 +196,7 @@ Try and complete the TODO list. Let's work together :)
 
 ## TODO list
 
-- [ ] Java Database Connectivity(JDBC) -> Basics and Implementaion
+- [x] Java Database Connectivity(JDBC) -> Basics and Implementaion
 - [ ] Make the Graphical User Interfaces look better
 - [x] Applets -> Undone since it's deprecated from JDK 9
 - [x] Basics and exmaples of abstract keyword
