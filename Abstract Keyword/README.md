@@ -1,6 +1,6 @@
 ## The “abstract” Keyword
 
-1. The keyword abstract can be used on classe declaration. For example abstract MyClassX (…);.
+1. The keyword abstract can be used on class declaration. For example abstract MyClassX (…);.
 1. The keyword abstract can be used on method declaration. For example abstract int f (…);.
 1. When a class is declared abstract, it cannot be instantiated.
 1. When a method is declared abstract, it cannot have definition.
