@@ -17,5 +17,3 @@ public class BasicThreadsByMainOnly {
 		obj1.start();
 	}
 }
-
-
