@@ -1,5 +1,5 @@
 /*
- * @name        A Login GUI 
+ * @name        A Login GUI
  * @package     GUIProjects
  * @file        LoginGUI.java
  * @author      Yedhin Kizhakkethara
@@ -22,7 +22,7 @@ import javax.swing.JOptionPane;
 
 class LoginGUI extends Frame {
 	// declare variables
-	private Label label1,label2; 
+	private Label label1,label2;
 	private TextField txtF1;
 	private TextField passF;
 	private Button buttonExit,buttonLogin;
@@ -31,7 +31,7 @@ class LoginGUI extends Frame {
 	// Looking for a better way to store this.
 	private final String uid = "Yedhin";
 	private final String pass = "*123#";
-	
+
 	// Constructor for the class
 	public LoginGUI(){
 		// set title
@@ -46,9 +46,8 @@ class LoginGUI extends Frame {
 
 		// explictely setting layout. default is Flow itself
 		setLayout(new FlowLayout());
-		
-		
-		//add(buttonExit);
+
+
 		// create a label for username
 		label1.setAlignment(Label.CENTER);
 		label1.setText("Username");
@@ -60,7 +59,7 @@ class LoginGUI extends Frame {
 
 		// changing echoing of characters typed in password field into *
 		passF.setEchoChar('*');
-		
+
 		add(txtF1);
 
 		// create a label for password
@@ -69,7 +68,7 @@ class LoginGUI extends Frame {
 		add(label2);
 
 		add(passF);
-		
+
 		// create an exit button
 		add(buttonExit);
 
@@ -79,8 +78,8 @@ class LoginGUI extends Frame {
 
 		// create an listener object.
 		theHandler handler = new theHandler();
-		
-		// add action listeners for both the buttons 
+
+		// add action listeners for both the buttons
 		buttonExit.addActionListener(handler);
 		buttonLogin.addActionListener(handler);
 	}
@@ -104,7 +103,7 @@ class LoginGUI extends Frame {
 					catch(InterruptedException ex){
 						System.out.println("Exception "+ex+" Caught");
 					}
-					dispose();	
+					dispose();
 					System.exit(0);
 				}
 				else{
@@ -118,6 +117,6 @@ class LoginGUI extends Frame {
 	public static void main(String[] args) {
 		LoginGUI frameObj = new LoginGUI();
 		frameObj.setSize(600,600);
-		frameObj.setVisible(true);	
+		frameObj.setVisible(true);
 	}
 }
