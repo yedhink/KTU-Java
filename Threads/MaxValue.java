@@ -1,5 +1,5 @@
 /*
- * @name        Find maximum value in an array of int 
+ * @name        Find maximum value in an array of int
  * @package     multithreadingexamples
  * @file        MaxValue.java
  * @author      Yedhin Kizhakkethara
@@ -9,7 +9,7 @@
  * @license     MIT
  * @create      23-04-2018
  */
-// Find the max value in an array of ints using 4 threads
+// Find the max value in an array of integers using 4 threads
 package threads.examples;
 import java.util.*;
 class Largest extends Thread {
@@ -25,7 +25,7 @@ class Largest extends Thread {
  	public void run(){
 		for (int i=lo; i<hi; ++i) {
 			if (arr[i] > large) {
-				large = arr[i];	
+				large = arr[i];
 			}
 		}
 	}
@@ -44,6 +44,7 @@ public class MaxValue {
 			//System.out.println(arr[i]);
 		}
 		maximum = arr[0];
+        // lets make use of 4 threads to complete the task
 		Largest[] t = new Largest[4];
 		for (int i=0; i<4; ++i) {
 			t[i] = new Largest(arr, i*arr.length/4, (i+1)*arr.length/4, maximum);
@@ -52,5 +53,5 @@ public class MaxValue {
 			maximum = t[i].getLargestInThread();
 		}
 		System.out.println("Maximum value in array is "+maximum);
-	}	
+	}
 }
