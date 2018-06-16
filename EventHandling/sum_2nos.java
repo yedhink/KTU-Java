@@ -37,4 +37,3 @@ public class sum_2nos extends Applet implements ActionListener
 		}
 	}
 }
-
