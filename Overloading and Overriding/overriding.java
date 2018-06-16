@@ -1,5 +1,5 @@
 /*
- * @name        Method Overriding 
+ * @name        Method Overriding
  * @package     classExamples.overR.DMD
  * @file        overriding.java
  * @author      Yedhin Kizhakkethara
@@ -21,10 +21,10 @@ class B extends A{
 	int valueB = 5;
 	void show(){
 		System.out.println("Inside class B");
-	
+
 	}
 }
-			
+
 class C extends B{
 	void show(){
 		System.out.println("Inside class C");
@@ -39,9 +39,9 @@ class overriding{
 		objA.show();
 		objB.show();
 		objC.show();
-		System.out.println("\nYay! We called the function revName() from another program\nReversed name : "+csb.getReversed("Yedhin")+"\n");
-		
-		// Dynamic Method Dispatch 
+		System.out.println("\nYay! We called the function getReversed() from another program\nReversed name : "+csb.getReversed("Yedhin")+"\n");
+
+		// Dynamic Method Dispatch
 		System.out.println("Dynamic method dispatch works");
 		A overA = objB;
 		A overC = objB;
