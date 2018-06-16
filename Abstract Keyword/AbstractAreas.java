@@ -7,6 +7,7 @@ abstract class Figure {
         dim2 = b;
     }
 
+    //this abstract class should be defined in the subclasses
     abstract double area();
 }
 
@@ -35,15 +36,15 @@ class Triangle extends Figure {
 class AbsractAreas {
     public static void main(String args[]) {
 
-      //Figure f = new Figure(100,10);
         Rectangle r = new Rectangle(9,5);
         Triangle t = new Triangle(10,8);
 
         Figure fs;
 
         fs = r;
-        System.out.println("Area is " + fs.area());
+        System.out.printf("Area is (%.2f*%.2f) = %.2f\n",fs.dim1,fs.dim2,fs.area());
         fs = t;
-        System.out.println("Area is " + fs.area());
+        System.out.printf("Area is (%.2f*%.2f)/2 = %.2f\n",fs.dim1,fs.dim2,fs.area());
+
     }
 }
