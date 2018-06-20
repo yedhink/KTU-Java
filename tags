@@ -1,0 +1,271 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/6aa62c97/
+1) Max value(MaxValue.java)	Threads/README.md	/^## 1) Max value(MaxValue.java)$/;"	s
+2) Reverse hello(ReverseHello.java)	Threads/README.md	/^## 2) Reverse hello(ReverseHello.java)$/;"	s
+3) Shared counter(SharedCounter.java)	Threads/README.md	/^## 3) Shared counter(SharedCounter.java)$/;"	s
+A	Overloading and Overriding/overriding.java	/^class A{$/;"	c
+A bit about what each directory in my repo has to offer	README.md	/^## A bit about what each directory in my repo has to offer$/;"	s
+AbsractAreas	Abstract Keyword/AbstractAreas.java	/^class AbsractAreas {$/;"	c
+AbstractExample	Abstract Keyword/AbstractExample.java	/^public class AbstractExample {$/;"	c
+Acknowledgement	README.md	/^# Acknowledgement$/;"	c
+ArithmeticOperators	Data Types And Operators/ArithmeticOperators.java	/^public class ArithmeticOperators {$/;"	c
+AssignmentOperators	Data Types And Operators/AssignmentOperators.java	/^public class AssignmentOperators {$/;"	c
+Attribution	CODE_OF_CONDUCT.md	/^## Attribution$/;"	s
+B	Overloading and Overriding/overriding.java	/^class B extends A{$/;"	c
+BasicThreadsByExtending	Threads/BasicThreadsByExtending.java	/^public class BasicThreadsByExtending {$/;"	c
+BasicThreadsByMainOnly	Threads/BasicThreadsByMainOnly.java	/^public class BasicThreadsByMainOnly {$/;"	c
+BasicThreadsByRunnable	Threads/BasicThreadsByRunnable.java	/^public class BasicThreadsByRunnable {$/;"	c
+BasicThreadsBySync	Threads/BasicThreadsBySync.java	/^public class BasicThreadsBySync {$/;"	c
+BitwiseOperators	Data Types And Operators/BitwiseOperators.java	/^public class BitwiseOperators {$/;"	c
+Bug reports	CONTRIBUTING.md	/^## Bug reports$/;"	s
+C	Overloading and Overriding/overriding.java	/^class C extends B{$/;"	c
+CheckSgpa	S3CsSgpa/CheckSgpa.java	/^public class CheckSgpa {$/;"	c
+Code Style	CONTRIBUTING.md	/^## Code Style$/;"	s
+CommonDataTypes	Data Types And Operators/CommonDataTypes.java	/^public class CommonDataTypes {$/;"	c
+ConditionalOperators	Data Types And Operators/ConditionalOperators.java	/^public class ConditionalOperators {$/;"	c
+Contact	README.md	/^# Contact$/;"	c
+Content	README.md	/^# Content$/;"	c
+Contribute	README.md	/^# Contribute$/;"	c
+Creating your own Database in MySql (optional)	JDBCTemplate/README.md	/^## Creating your own Database in MySql (optional)$/;"	s
+Credits	README.md	/^# Credits$/;"	c
+Documentation	CONTRIBUTING.md	/^## Documentation$/;"	s
+Enforcement	CODE_OF_CONDUCT.md	/^## Enforcement$/;"	s
+Figure	Abstract Keyword/AbstractAreas.java	/^    Figure(double a, double b) {$/;"	m	class:Figure
+Figure	Abstract Keyword/AbstractAreas.java	/^abstract class Figure {$/;"	c
+Foreach	Loops/Foreach.java	/^class Foreach $/;"	c
+H	Abstract Keyword/AbstractExample.java	/^    \/* abstract *\/ H () {x=1;} \/\/ constructor cannot be abstract$/;"	m	class:H
+H	Abstract Keyword/AbstractExample.java	/^abstract class H {$/;"	c
+H1	Abstract Keyword/AbstractExample.java	/^class H1 extends H {$/;"	c
+How to contribute to KTU-Java	CONTRIBUTING.md	/^# How to contribute to KTU-Java$/;"	c
+How to use my repositiory?	README.md	/^# How to use my repositiory? $/;"	c
+Introduction	README.md	/^# Introduction$/;"	c
+JdbcBeg	JDBCTemplate/JdbcBeg.java	/^public class JdbcBeg implements Runnable{$/;"	c
+KTU-Java Code of Conduct	CODE_OF_CONDUCT.md	/^# KTU-Java Code of Conduct$/;"	c
+Largest	Threads/MaxValue.java	/^	Largest(int[] arr, int lo, int hi, long large){$/;"	m	class:Largest
+Largest	Threads/MaxValue.java	/^class Largest extends Thread {$/;"	c
+License	README.md	/^## License  $/;"	s
+LoginGUI	EventHandling/LoginGUI.java	/^	public LoginGUI(){$/;"	m	class:LoginGUI
+LoginGUI	EventHandling/LoginGUI.java	/^class LoginGUI extends Frame {$/;"	c
+Made with ❤ by yours truly	README.md	/^# Made with ❤ by yours truly $/;"	c
+Main	EasyKtuMath/Main.java	/^public class Main {$/;"	c
+MatrixAddUI	2darray/MatrixAddUI.java	/^class MatrixAddUI{$/;"	c
+MatrixMult	2darray/MatrixMult.java	/^class MatrixMult{$/;"	c
+MaxValue	Threads/MaxValue.java	/^public class MaxValue {$/;"	c
+NumericIntegration	EasyKtuMath/NumericIntegration.java	/^public class NumericIntegration {$/;"	c
+OnePlusTwoEqualsTwelve	Data Types And Operators/OnePlusTwoEqualsTwelve.java	/^public class OnePlusTwoEqualsTwelve {$/;"	c
+Our Standards	CODE_OF_CONDUCT.md	/^## Our Standards$/;"	s
+Overviews	README.md	/^# Overviews$/;"	c
+Practice Questions	Threads/README.md	/^# Practice Questions$/;"	c
+Primitive Data Types	Data Types And Operators/README.md	/^## Primitive Data Types$/;"	s
+Pull requests	CONTRIBUTING.md	/^## Pull requests$/;"	s
+Purpose of Abstract Classes	Abstract Keyword/README.md	/^## Purpose of Abstract Classes$/;"	s
+Questions	CONTRIBUTING.md	/^## Questions$/;"	s
+Rectangle	Abstract Keyword/AbstractAreas.java	/^    Rectangle(double a,double b) {$/;"	m	class:Rectangle
+Rectangle	Abstract Keyword/AbstractAreas.java	/^class Rectangle extends Figure {$/;"	c
+RecursiveParser	EasyKtuMath/RecursiveParser.java	/^public class RecursiveParser {$/;"	c
+RelationalOperators	Data Types And Operators/RelationalOperators.java	/^public class RelationalOperators {$/;"	c
+Requirements	JDBCTemplate/README.md	/^# Requirements$/;"	c
+Requirements	README.md	/^# Requirements$/;"	c
+ReverseHello	Threads/ReverseHello.java	/^public class ReverseHello {$/;"	c
+SharedCounter	Threads/SharedCounter.java	/^public class SharedCounter {$/;"	c
+Simple assignment	Data Types And Operators/README.md	/^Simple assignment$/;"	c
+Spread the word	README.md	/^## Spread the word$/;"	s
+TODO list	README.md	/^## TODO list$/;"	s
+The Java programming language has around 30 operators as summarized below:	Data Types And Operators/README.md	/^## The Java programming language has around 30 operators as summarized below:$/;"	s
+The “abstract” Keyword	Abstract Keyword/README.md	/^## The “abstract” Keyword$/;"	s
+Triangle	Abstract Keyword/AbstractAreas.java	/^    Triangle(double a, double b) {$/;"	m	class:Triangle
+Triangle	Abstract Keyword/AbstractAreas.java	/^class Triangle extends Figure {$/;"	c
+TypeComparisonOperators	Data Types And Operators/TypeComparisonOperators.java	/^public class TypeComparisonOperators {$/;"	c
+UnaryOperators	Data Types And Operators/UnaryOperators.java	/^public class UnaryOperators {$/;"	c
+UnderstandingTypeCasting	Data Types And Operators/UnderstandingTypeCasting.java	/^public class UnderstandingTypeCasting {$/;"	c
+Usage	JDBCTemplate/README.md	/^## Usage$/;"	s
+WELCOME TO THE APPLET	EventHandling/sum_2nos.html	/^            <H1>WELCOME TO THE APPLET<\/H1> <\/CENTER>  $/;"	h
+What's next?	README.md	/^# What's next?$/;"	c
+Your SGPAs a click away...	README.md	/^### Your SGPAs a click away...$/;"	S
+a	EasyKtuMath/NumericIntegration.java	/^		private static float a,b,n;$/;"	f	class:NumericIntegration	file:
+actionPerformed	EventHandling/LoginGUI.java	/^		public void actionPerformed(ActionEvent e) {$/;"	m	class:LoginGUI.theHandler
+actionPerformed	EventHandling/sum_2nos.java	/^	public void actionPerformed(ActionEvent e)$/;"	m	class:sum_2nos
+actionPerformed	S3CsSgpa/CheckSgpa.java	/^		public void actionPerformed(ActionEvent event) {	$/;"	m	class:gui.theHandler
+area	Abstract Keyword/AbstractAreas.java	/^    abstract double area();$/;"	m	class:Figure
+area	Abstract Keyword/AbstractAreas.java	/^    double area() {$/;"	m	class:Rectangle
+area	Abstract Keyword/AbstractAreas.java	/^    double area() {$/;"	m	class:Triangle
+arr	Threads/MaxValue.java	/^	int[] arr;$/;"	f	class:Largest
+b	EasyKtuMath/NumericIntegration.java	/^		private static float a,b,n;$/;"	f	class:NumericIntegration	file:
+b	EventHandling/sum_2nos.java	/^	Button b = new Button("ADD ");$/;"	f	class:sum_2nos
+box	Overloading and Overriding/reference.java	/^        box(double w,double h,double d){$/;"	m	class:box
+box	Overloading and Overriding/reference.java	/^class box{$/;"	c
+boxweight	Overloading and Overriding/reference.java	/^        boxweight(double w,double h,double d,double m){$/;"	m	class:boxweight
+boxweight	Overloading and Overriding/reference.java	/^class boxweight extends box{$/;"	c
+br	EasyKtuMath/NumericIntegration.java	/^		private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));$/;"	f	class:NumericIntegration	file:
+buttonExit	EventHandling/LoginGUI.java	/^	private Button buttonExit,buttonLogin;$/;"	f	class:LoginGUI	file:
+buttonFind	S3CsSgpa/CheckSgpa.java	/^	private static JButton buttonFind , buttonTopTen;$/;"	f	class:gui	file:
+buttonLogin	EventHandling/LoginGUI.java	/^	private Button buttonExit,buttonLogin;$/;"	f	class:LoginGUI	file:
+buttonTopTen	S3CsSgpa/CheckSgpa.java	/^	private static JButton buttonFind , buttonTopTen;$/;"	f	class:gui	file:
+charset	Overloading and Overriding/csb.java	/^class charset implements classHour{$/;"	c
+choice	EasyKtuMath/NumericIntegration.java	/^		private static String formule , eachFOfX, choice;$/;"	f	class:NumericIntegration	file:
+classHour	Overloading and Overriding/csb.java	/^interface classHour{$/;"	i
+classexamples	Overloading and Overriding/csb.java	/^package classexamples;$/;"	p
+classexamples	Overloading and Overriding/overriding.java	/^package classexamples;$/;"	p
+count	Threads/BasicThreadsBySync.java	/^	public static int count = 0;$/;"	f	class:BasicThreadsBySync
+count	Threads/SharedCounter.java	/^	public static int count = 0;$/;"	f	class:SharedCounter
+countMethod	Threads/BasicThreadsBySync.java	/^	public static synchronized void countMethod() {$/;"	m	class:BasicThreadsBySync
+csb	Overloading and Overriding/csb.java	/^public class csb{$/;"	c
+d	Overloading and Overriding/reference.java	/^        double w,h,d;$/;"	f	class:box
+debug	EasyKtuMath/NumericIntegration.java	/^		private static boolean debug;$/;"	f	class:NumericIntegration	file:
+dim1	Abstract Keyword/AbstractAreas.java	/^    double dim1;$/;"	f	class:Figure
+dim2	Abstract Keyword/AbstractAreas.java	/^    double dim2;$/;"	f	class:Figure
+eachFOfX	EasyKtuMath/NumericIntegration.java	/^		private static String formule , eachFOfX, choice;$/;"	f	class:NumericIntegration	file:
+eval	EasyKtuMath/RecursiveParser.java	/^	public static double eval(final String str) {$/;"	m	class:RecursiveParser
+evaluated	EasyKtuMath/NumericIntegration.java	/^		private static double secondExp , firstPlusLast , thirdExp , evaluated;$/;"	f	class:NumericIntegration	file:
+firstPlusLast	EasyKtuMath/NumericIntegration.java	/^		private static double secondExp , firstPlusLast , thirdExp , evaluated;$/;"	f	class:NumericIntegration	file:
+forloop	Loops/forloop.java	/^public class forloop {$/;"	c
+formule	EasyKtuMath/NumericIntegration.java	/^		private static String formule , eachFOfX, choice;$/;"	f	class:NumericIntegration	file:
+getLargestInThread	Threads/MaxValue.java	/^	public long getLargestInThread(){$/;"	m	class:Largest
+getReversed	Overloading and Overriding/csb.java	/^	public static String getReversed(String value){$/;"	m	class:csb
+gui	S3CsSgpa/CheckSgpa.java	/^	public gui(){$/;"	m	class:gui
+gui	S3CsSgpa/CheckSgpa.java	/^class gui extends Frame {$/;"	c
+guiprojects	EventHandling/LoginGUI.java	/^package guiprojects;$/;"	p
+guiprojects	EventHandling/sum_2nos.java	/^package guiprojects;$/;"	p
+guiprojects	S3CsSgpa/CheckSgpa.java	/^package guiprojects;$/;"	p
+h	EasyKtuMath/NumericIntegration.java	/^		private static float h;$/;"	f	class:NumericIntegration	file:
+h	Overloading and Overriding/reference.java	/^        double w,h,d;$/;"	f	class:box
+hello	Threads/ReverseHello.java	/^	String hello = "";$/;"	f	class:thread
+hi	Threads/MaxValue.java	/^	int lo,hi;$/;"	f	class:Largest
+i	EasyKtuMath/NumericIntegration.java	/^		private static int i = 0;$/;"	f	class:NumericIntegration	file:
+ifelse	Loops/ifelse.java	/^public class ifelse {$/;"	c
+incrementCount	Threads/SharedCounter.java	/^	public static synchronized void incrementCount(){$/;"	m	class:SharedCounter
+init	EventHandling/sum_2nos.java	/^	public void init()$/;"	m	class:sum_2nos
+jcb	S3CsSgpa/CheckSgpa.java	/^	private static JComboBox<String> jcb = new JComboBox<>();$/;"	f	class:gui	file:
+jumpstatements	Overloading and Overriding/jumpstatements.java	/^class jumpstatements{$/;"	c
+k	Overloading and Overriding/jumpstatements.java	/^	int k=7;$/;"	f	class:test
+key	S3CsSgpa/CheckSgpa.java	/^	private static String key,value;$/;"	f	class:gui	file:
+l1	EventHandling/sum_2nos.java	/^	Label l1 = new Label("First no");$/;"	f	class:sum_2nos
+l2	EventHandling/sum_2nos.java	/^	Label l2 = new Label("Second no");$/;"	f	class:sum_2nos
+l3	EventHandling/sum_2nos.java	/^	Label l3 = new Label("Sum ");$/;"	f	class:sum_2nos
+label1	EventHandling/LoginGUI.java	/^	private Label label1,label2;$/;"	f	class:LoginGUI	file:
+label2	EventHandling/LoginGUI.java	/^	private Label label1,label2;$/;"	f	class:LoginGUI	file:
+large	Threads/MaxValue.java	/^    long large;$/;"	f	class:Largest
+listFOfX	EasyKtuMath/NumericIntegration.java	/^		private static List<String> listFOfX; $/;"	f	class:NumericIntegration	file:
+lo	Threads/MaxValue.java	/^	int lo,hi;$/;"	f	class:Largest
+loops	Loops/Foreach.java	/^package loops;$/;"	p
+loops	Loops/forloop.java	/^package loops;$/;"	p
+loops	Loops/ifelse.java	/^package loops;$/;"	p
+main	2darray/MatrixAddUI.java	/^	public static void main(String args[]){$/;"	m	class:MatrixAddUI
+main	2darray/MatrixMult.java	/^	public static void main(String args[]){$/;"	m	class:MatrixMult
+main	Abstract Keyword/AbstractAreas.java	/^    public static void main(String args[]) {$/;"	m	class:AbsractAreas
+main	Abstract Keyword/AbstractExample.java	/^    public static void main(String[] args) {$/;"	m	class:AbstractExample
+main	Data Types And Operators/ArithmeticOperators.java	/^    public static void main(String[] args) {$/;"	m	class:ArithmeticOperators
+main	Data Types And Operators/AssignmentOperators.java	/^	public static void main(String[] args) {$/;"	m	class:AssignmentOperators
+main	Data Types And Operators/BitwiseOperators.java	/^   public static void main(String args[]) {$/;"	m	class:BitwiseOperators
+main	Data Types And Operators/CommonDataTypes.java	/^    public static void main(String[] args) {$/;"	m	class:CommonDataTypes
+main	Data Types And Operators/ConditionalOperators.java	/^    public static void main(String[] args) {$/;"	m	class:ConditionalOperators
+main	Data Types And Operators/OnePlusTwoEqualsTwelve.java	/^    public static void main(String[] args) {$/;"	m	class:OnePlusTwoEqualsTwelve
+main	Data Types And Operators/RelationalOperators.java	/^    public static void main(String[] args) {$/;"	m	class:RelationalOperators
+main	Data Types And Operators/TypeComparisonOperators.java	/^    public static void main(String[] args) {$/;"	m	class:TypeComparisonOperators
+main	Data Types And Operators/UnaryOperators.java	/^    public static void main(String[] args) {$/;"	m	class:UnaryOperators
+main	Data Types And Operators/UnderstandingTypeCasting.java	/^    public static void main(String[] args) {$/;"	m	class:UnderstandingTypeCasting
+main	EasyKtuMath/Main.java	/^	public static void main(String[] args) throws IOException{$/;"	m	class:Main
+main	EasyKtuMath/NumericIntegration.java	/^	public static void main(String args[]){}$/;"	m	class:NumericIntegration
+main	EasyKtuMath/RecursiveParser.java	/^	public static void main(String[] args) {$/;"	m	class:RecursiveParser
+main	EventHandling/LoginGUI.java	/^	public static void main(String[] args) {$/;"	m	class:LoginGUI
+main	JDBCTemplate/JdbcBeg.java	/^    public static void main(String[] args) {$/;"	m	class:JdbcBeg
+main	Loops/Foreach.java	/^	public static void main(String args[]){$/;"	m	class:Foreach
+main	Loops/forloop.java	/^    public static void main(String[] args) {$/;"	m	class:forloop
+main	Loops/ifelse.java	/^	public static void main(String[] args) {$/;"	m	class:ifelse
+main	Loops/quadraticseries.java	/^	public static void main(String args[]){$/;"	m	class:quadraticseries
+main	Overloading and Overriding/csb.java	/^	public static void main(String args[]){$/;"	m	class:csb
+main	Overloading and Overriding/jumpstatements.java	/^	public static void main(String args[]) throws FileNotFoundException, InterruptedException, IOEx/;"	m	class:jumpstatements
+main	Overloading and Overriding/overriding.java	/^	public static void main(String args[]){$/;"	m	class:overriding
+main	Overloading and Overriding/reference.java	/^        public static void main(String args[]){$/;"	m	class:reference
+main	S3CsSgpa/CheckSgpa.java	/^	public static void main(String[] args) throws IOException , InterruptedException, FileNotFoundE/;"	m	class:CheckSgpa
+main	Threads/BasicThreadsByExtending.java	/^	public static void main(String[] args) {$/;"	m	class:BasicThreadsByExtending
+main	Threads/BasicThreadsByMainOnly.java	/^	public static void main(String[] args) {$/;"	m	class:BasicThreadsByMainOnly
+main	Threads/BasicThreadsByRunnable.java	/^	public static void main(String[] args) {$/;"	m	class:BasicThreadsByRunnable
+main	Threads/BasicThreadsBySync.java	/^	public static void main(String[] args) {$/;"	m	class:BasicThreadsBySync
+main	Threads/MaxValue.java	/^	public static void main(String[] args) throws InterruptedException{$/;"	m	class:MaxValue
+main	Threads/ReverseHello.java	/^	public static void main(String[] args) throws InterruptedException {$/;"	m	class:ReverseHello
+main	Threads/SharedCounter.java	/^	public static void main(String[] args) throws Exception{$/;"	m	class:SharedCounter
+map	S3CsSgpa/CheckSgpa.java	/^	private static HashMap<String,String> map = new HashMap<>();$/;"	f	class:gui	file:
+math.modulesix	EasyKtuMath/Main.java	/^package math.modulesix;$/;"	p
+math.modulesix	EasyKtuMath/NumericIntegration.java	/^package math.modulesix;$/;"	p
+math.modulesix	EasyKtuMath/RecursiveParser.java	/^package math.modulesix;$/;"	p
+n	EasyKtuMath/NumericIntegration.java	/^		private static float a,b,n;$/;"	f	class:NumericIntegration	file:
+operators	Data Types And Operators/ArithmeticOperators.java	/^package operators;$/;"	p
+operators	Data Types And Operators/AssignmentOperators.java	/^package operators;$/;"	p
+operators	Data Types And Operators/BitwiseOperators.java	/^package operators;$/;"	p
+operators	Data Types And Operators/CommonDataTypes.java	/^package operators;$/;"	p
+operators	Data Types And Operators/ConditionalOperators.java	/^package operators;$/;"	p
+operators	Data Types And Operators/OnePlusTwoEqualsTwelve.java	/^package operators;$/;"	p
+operators	Data Types And Operators/RelationalOperators.java	/^package operators;$/;"	p
+operators	Data Types And Operators/TypeComparisonOperators.java	/^package operators;$/;"	p
+operators	Data Types And Operators/UnaryOperators.java	/^package operators;$/;"	p
+operators	Data Types And Operators/UnderstandingTypeCasting.java	/^package operators;$/;"	p
+overriding	Overloading and Overriding/overriding.java	/^class overriding{$/;"	c
+panelLogin	EventHandling/LoginGUI.java	/^	private Panel panelLogin;$/;"	f	class:LoginGUI	file:
+pass	EventHandling/LoginGUI.java	/^	private final String pass = "*123#";$/;"	f	class:LoginGUI	file:
+passF	EventHandling/LoginGUI.java	/^	private TextField passF;$/;"	f	class:LoginGUI	file:
+pathReg	S3CsSgpa/CheckSgpa.java	/^	private static String pathReg = ".\/reg.txt" , pathSgpa = ".\/sgpa.txt"; $/;"	f	class:gui	file:
+pathSgpa	S3CsSgpa/CheckSgpa.java	/^	private static String pathReg = ".\/reg.txt" , pathSgpa = ".\/sgpa.txt"; $/;"	f	class:gui	file:
+populate	S3CsSgpa/CheckSgpa.java	/^	public static synchronized void populate() throws FileNotFoundException, IOException {$/;"	m	class:gui
+quadraticseries	Loops/quadraticseries.java	/^class quadraticseries{$/;"	c
+reference	Overloading and Overriding/reference.java	/^class reference{$/;"	c
+returnMe	Abstract Keyword/AbstractExample.java	/^    int returnMe () {return x;}$/;"	m	class:H
+revName	Overloading and Overriding/csb.java	/^	String revName(String value);$/;"	m	interface:classHour
+revName	Overloading and Overriding/csb.java	/^	public String revName(String value){$/;"	m	class:charset
+run	JDBCTemplate/JdbcBeg.java	/^    public void run() {$/;"	m	class:JdbcBeg
+run	Threads/BasicThreadsByExtending.java	/^	public void run(){$/;"	m	class:thread
+run	Threads/BasicThreadsByRunnable.java	/^	public void run(){$/;"	m	class:thread
+run	Threads/MaxValue.java	/^ 	public void run(){$/;"	m	class:Largest
+run	Threads/ReverseHello.java	/^	public void run() {$/;"	m	class:thread
+secondExp	EasyKtuMath/NumericIntegration.java	/^		private static double secondExp , firstPlusLast , thirdExp , evaluated;$/;"	f	class:NumericIntegration	file:
+show	Overloading and Overriding/overriding.java	/^	void show(){$/;"	m	class:A
+show	Overloading and Overriding/overriding.java	/^	void show(){$/;"	m	class:B
+show	Overloading and Overriding/overriding.java	/^	void show(){$/;"	m	class:C
+simpsonsIntegration	EasyKtuMath/NumericIntegration.java	/^	public static void simpsonsIntegration() throws IOException {$/;"	m	class:NumericIntegration
+sortByComparator	S3CsSgpa/CheckSgpa.java	/^	private static Map<String, String> sortByComparator(Map<String, String> unsortMap, final boolea/;"	m	class:gui	file:
+sum_2nos	EventHandling/sum_2nos.java	/^public class sum_2nos extends Applet implements ActionListener$/;"	c
+t1	EventHandling/sum_2nos.java	/^	TextField t1 = new TextField(10);$/;"	f	class:sum_2nos
+t2	EventHandling/sum_2nos.java	/^	TextField t2 = new TextField(10);$/;"	f	class:sum_2nos
+t3	EventHandling/sum_2nos.java	/^	TextField t3 = new TextField(10);$/;"	f	class:sum_2nos
+test	Overloading and Overriding/jumpstatements.java	/^	test(){$/;"	m	class:test
+test	Overloading and Overriding/jumpstatements.java	/^	test(String word,int k){$/;"	m	class:test
+test	Overloading and Overriding/jumpstatements.java	/^class test{$/;"	c
+theHandler	EventHandling/LoginGUI.java	/^	private class theHandler implements ActionListener {$/;"	c	class:LoginGUI
+theHandler	S3CsSgpa/CheckSgpa.java	/^	private class theHandler implements ActionListener {$/;"	c	class:gui
+thirdExp	EasyKtuMath/NumericIntegration.java	/^		private static double secondExp , firstPlusLast , thirdExp , evaluated;$/;"	f	class:NumericIntegration	file:
+thread	Threads/BasicThreadsByExtending.java	/^class thread extends Thread {$/;"	c
+thread	Threads/BasicThreadsByRunnable.java	/^class thread implements Runnable {$/;"	c
+thread	Threads/ReverseHello.java	/^	thread(String hello){$/;"	m	class:thread
+thread	Threads/ReverseHello.java	/^class thread extends Thread {$/;"	c
+threads	Threads/BasicThreadsByExtending.java	/^package threads;$/;"	p
+threads	Threads/BasicThreadsByMainOnly.java	/^package threads;$/;"	p
+threads	Threads/BasicThreadsByRunnable.java	/^package threads;$/;"	p
+threads	Threads/BasicThreadsBySync.java	/^package threads;$/;"	p
+threads.examples	Threads/MaxValue.java	/^package threads.examples;$/;"	p
+threads.examples	Threads/ReverseHello.java	/^package threads.examples;$/;"	p
+threads.examples	Threads/SharedCounter.java	/^package threads.examples;$/;"	p
+trapezoidalIntegration	EasyKtuMath/NumericIntegration.java	/^	public static void trapezoidalIntegration() throws IOException {$/;"	m	class:NumericIntegration
+triple	Abstract Keyword/AbstractExample.java	/^    void triple  (int n) {x=x*3;}; \/\/ a normal method$/;"	m	class:H
+triple2	Abstract Keyword/AbstractExample.java	/^    static int triple2 (int n) {return n*3;}; \/\/ a static method in abstract class is ok.$/;"	m	class:H
+triple3	Abstract Keyword/AbstractExample.java	/^    abstract void triple3 (); \/\/ abstract method. Note: no definition.$/;"	m	class:H
+triple3	Abstract Keyword/AbstractExample.java	/^    void triple3 () {x=x*3+1;} \/\/ must be defined, else compiler makes a complaint.$/;"	m	class:H1
+twoDArray	2darray/MatrixAddUI.java	/^package twoDArray;$/;"	p
+twoDArray	2darray/MatrixMult.java	/^package twoDArray;$/;"	p
+txtF1	EventHandling/LoginGUI.java	/^	private TextField txtF1;$/;"	f	class:LoginGUI	file:
+uid	EventHandling/LoginGUI.java	/^	private final String uid = "Yedhin";$/;"	f	class:LoginGUI	file:
+value	S3CsSgpa/CheckSgpa.java	/^	private static String key,value;$/;"	f	class:gui	file:
+valueB	Overloading and Overriding/overriding.java	/^	int valueB = 5;$/;"	f	class:B
+valueOfX	EasyKtuMath/NumericIntegration.java	/^		private static List<String> valueOfX;$/;"	f	class:NumericIntegration	file:
+volume	Overloading and Overriding/reference.java	/^        public double volume(){$/;"	m	class:box
+volume	Overloading and Overriding/reference.java	/^        public double volume(){$/;"	m	class:boxweight
+w	Overloading and Overriding/reference.java	/^        double w,h,d;$/;"	f	class:box
+weight	Overloading and Overriding/reference.java	/^        double weight;$/;"	f	class:boxweight
+word	Overloading and Overriding/jumpstatements.java	/^	String word;$/;"	f	class:test
+words	Threads/ReverseHello.java	/^	String[] words;$/;"	f	class:thread
+x	Abstract Keyword/AbstractExample.java	/^    int x;$/;"	f	class:H
+y	Abstract Keyword/AbstractExample.java	/^    \/* abstract *\/ int y; \/\/ variables cannot be abstract$/;"	f	class:H
