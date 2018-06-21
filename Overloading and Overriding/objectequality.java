@@ -9,5 +9,6 @@ class objectequality {
         System.out.println(obj1.equals(obj2));
         System.out.println(obj1.a+obj2.a);
         System.out.println((obj1==obj2));
+        System.out.println((obj1.a==obj2.a));
     }
 }
