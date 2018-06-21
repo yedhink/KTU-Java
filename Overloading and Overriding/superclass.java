@@ -24,7 +24,5 @@ class superclass {
         s=sub;
         System.out.println(s.vol());
         System.out.println(sub.vol());
-        sub=s;
-        System.out.println(sub.vol());
     }
 }
