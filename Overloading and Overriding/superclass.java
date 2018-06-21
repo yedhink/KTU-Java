@@ -4,9 +4,9 @@ class superClass {
         this.a = a;
         this.b = b;
     }
-//    int vol(){
-//        return a*b;
-//    }
+    int vol(){
+        return a*b;
+    }
 }
 
 class subClass extends superClass{
@@ -23,6 +23,8 @@ class superclass {
         subClass sub = new subClass(3,6);
         s=sub;
         System.out.println(s.vol());
+        System.out.println(sub.vol());
+        sub=s;
         System.out.println(sub.vol());
     }
 }
