@@ -12,8 +12,7 @@ class superClass {
 class subClass extends superClass{
     int a=-1,b=-1;
     subClass(int a , int b){
-        this.a = a;
-        this.b = b;
+        super(a,b);
     }
     int vol(){
         return a*b;
