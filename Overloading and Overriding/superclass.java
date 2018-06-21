@@ -20,6 +20,7 @@ class subClass extends superClass{
 class superclass {
     public static void main(String args[]) {
         superClass s = new superClass(2,4);
+        System.out.println(s.vol());
         subClass sub = new subClass(3,6);
         s=sub;
         System.out.println(s.vol());
