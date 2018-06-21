@@ -4,7 +4,7 @@ class superClass {
         this.a = a;
         this.b = b;
     }
-    float vol(){
+    floaint vol(){
         return a*b;
     }
 }
