@@ -1,3 +1,7 @@
+class demo {
+    int a=1,b=1;
+}
+
 class objectequality {
     public static void main(String args[]) {
         demo obj1 = new demo();
