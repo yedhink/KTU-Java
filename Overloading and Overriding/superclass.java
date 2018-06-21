@@ -4,9 +4,9 @@ class superClass {
         this.a = a;
         this.b = b;
     }
-    int vol(){
-        return a*b;
-    }
+//    int vol(){
+//        return a*b;
+//    }
 }
 
 class subClass extends superClass{
