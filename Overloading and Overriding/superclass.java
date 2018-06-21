@@ -24,5 +24,6 @@ class superclass {
         subClass sub = new subClass(3,6);
         s=sub;
         System.out.println(s.vol());
+        System.out.println(sub.vol());
     }
 }
