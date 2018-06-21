@@ -23,6 +23,6 @@ class superclass {
         superClass s = new superClass(2,4);
         subClass sub = new subClass(3,6);
         s=sub;
-        s.vol();
+        System.out.println(s.vol());
     }
 }
