@@ -14,7 +14,7 @@ class subClass extends superClass{
         super(a,b);
     }
     int vol(){
-        return this.a*this.b;
+        return a*b;
     }
 }
 class superclass {
