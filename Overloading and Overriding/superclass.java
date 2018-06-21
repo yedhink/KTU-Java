@@ -26,4 +26,4 @@ class superclass {
         s=sub;
         s.vol();
     }
-}i
+}
