@@ -21,7 +21,7 @@ class superclass {
     public static void main(String args[]) {
         superClass s = new superClass(2,4);
         subClass sub = new subClass(3,6);
-        //s=sub;
+        s=sub;
         System.out.println(s.vol());
         System.out.println(sub.vol());
     }
