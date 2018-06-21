@@ -210,7 +210,7 @@ Having issues in the program? Open up an issue in the issues counter, so that I 
 Feel free to contact me via [Linkedin](https://www.linkedin.com/in/yedhin1998/) if you have any questions.
 
 # Credits
-Without [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) and [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) this project wouldn't have become a reality. Well thanks to Bram Moolenaar. [Oracle Java Documentation](http://www.oracle.com/technetwork/java/javase/overview/index.html), [tutorialspoint](https://www.tutorialspoint.com/index.htm) were also great references. Last but not the least , I would like to mention [Arch Linux](https://www.distrowatch.com/table.php?distribution=arch) for providing me with such a smooth sailing workflow `->` "makepkg! Not war".
+[Oracle Java Documentation](http://www.oracle.com/technetwork/java/javase/overview/index.html), [tutorialspoint](https://www.tutorialspoint.com/index.htm) were great references.
 
 ## License  
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/yedhink/KTU-Java/blob/master/LICENSE) file for details
