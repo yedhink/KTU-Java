@@ -17,6 +17,7 @@ class subClass extends superClass{
         return a*b;
     }
 }
+
 class superclass {
     public static void main(String args[]) {
         superClass s = new superClass(2,4);
