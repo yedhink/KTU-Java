@@ -5,5 +5,6 @@ class strings {
         System.out.println(sb);
         System.out.println(sb.reverse());
         s1 = sb.reverse().toString();
+        System.out.println(s1);
     }
 }
