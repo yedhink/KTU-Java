@@ -4,5 +4,6 @@ class strings {
         StringBuffer sb = new StringBuffer(s1);
         System.out.println(sb);
         System.out.println(sb.reverse());
+        s1 = sb.reverse();
     }
 }
