@@ -9,8 +9,7 @@ public class forloop {
         Scanner in = new Scanner(System.in);
 	System.out.print("Enter Number Whose Multiplication Table Is To Be Displayed = ");
         int N = in.nextInt();
-        int i=0;
-        for(i=1;i<=10;i++){
+        for(int i=1;i<=10;i++){
             System.out.println(N+" x "+ i +" = "+N*i);
         }
 	in.close(); // make this a practice (._.)
